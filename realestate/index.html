@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Real Estate</title>
+		<link href="css/style.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+		<div id='top-line'>
+			<div id='header'>
+				<img src='images/header-logo.png' id='header-img'>
+				<img src='images/header-phone.png' id='header-call'>
+			</div>
+		</div>
+		<div id='navbar'>
+			<div class='wrapper'>
+				<div class='left'>
+					<ul>
+						<li><a href='#'>Home</a></li>
+						<li><a href='#'>Our Story</a></li>
+						<li><a href='#'>Tenant</a></li>
+						<li><a href='#'>Owner</a></li>
+						<li><a href='#'>Contact us</a></li>
+					</ul>
+				</div>
+				<div class='right'>
+					<ul>
+						<li><a href='#'>Sign in</a></li>
+						<li id='text'>/</li>
+						<li><a href='#'>Sign up</a></li>
+					</ul>
+				</div>
+				<div class='clear'></div>
+			</div>
+		</div>
+		<div id='banner'>
+			<div class='wrapper'>
+				<div id='carousel'>
+					<div id="Carousel1" class='carousel-content'>
+						<img src='images/banner-img.jpg'>
+						<div id='carousel-desc'>
+							<h2>First Tab</h2>
+							<p>We work with investors to make managing your investments easy!</p>
+						</div>
+					</div>
+					<div id="Carousel2" class='carousel-content'>
+						<img src='images/banner-img.jpg'>
+						<div id='carousel-desc'>
+							<h2>Second Tab</h2>
+							<p>We work with investors to make managing your investments easy!</p>
+						</div>
+					</div>
+					<div id="Carousel3" class='carousel-content'>
+						<img src='images/banner-img.jpg'>
+						<div id='carousel-desc'>
+							<h2>Lorem Ipsum is simply dummy text of</h2>
+							<p>We work with investors to make managing your investments easy!</p>
+						</div>
+					</div>
+					<div id="Carousel4" class='carousel-content'>
+						<img src='images/banner-img.jpg'>
+						<div id='carousel-desc'>
+							<h2>Fourth Tab</h2>
+							<p>We work with investors to make managing your investments easy!</p>
+						</div>
+					</div>
+					<div id="Carousel5" class='carousel-content'>
+						<img src='images/banner-img.jpg'>
+						<div id='carousel-desc'>
+							<h2>Fifth Tab</h2>
+							<p>We work with investors to make managing your investments easy!</p>
+						</div>
+					</div>
+					<ul>
+						<li><button class="carousel-button" onclick="switchImage(event, 'Carousel1')"></button></li>
+						<li><button class="carousel-button" onclick="switchImage(event, 'Carousel2')"></button></li>
+						<li><button class="carousel-button active" onclick="switchImage(event, 'Carousel3')" id="CarouselStart"></button></li>
+						<li><button class="carousel-button" onclick="switchImage(event, 'Carousel4')"></button></li>
+						<li><button class="carousel-button" onclick="switchImage(event, 'Carousel5')"></button></li>
+					</ul>
+				</div>
+				<div id='banner-form'>
+					<button class="tablinks active" onclick="openCity(event, 'Tenants')" id="defaultOpen">Tenants</button>
+					<button class="tablinks" onclick="openCity(event, 'Oweners')">Oweners</button>
+					<div id="Tenants" class='form-search'>
+						<form action='' method="POST">
+							<p id='form-header'>Address, Suburbs, Postcodes, or Regions</p>
+							<input class='address' type='text' name='address' placeholder="Example: Wichita Falls, Texas 76301">
+							<div id='selector'>
+								<input class='check' type='checkbox'><span id='checktext'>Include surrounding suburbs</span><br />
+								<div id='dropdown'>
+									<p id='selecttext'>Property Type:</p>
+									<select class='selector'>
+										<option>Select one</option>
+									</select>
+								</div>
+								<div id='dropdown'>
+									<p id='selecttext'>Bedrooms:</p>
+									<select class='selector'>
+										<option>Select one</option>
+									</select>
+								</div>
+							</div>
+							<input type="image" src='images/search-submit.png' class='submit'>
+						</form>
+					</div>
+					<div id="Oweners" class='form-search'>
+						<form action='' method="POST">
+							<p id='form-header'>Another tab</p>
+							<input class='address' type='text' name='address' placeholder="Example: Wichita Falls, Texas 76301">
+							<div id='selector'>
+								<input class='check' type='checkbox'><span id='checktext'>Include surrounding suburbs</span><br />
+								<div id='dropdown'>
+									<p id='selecttext'>Property Type:</p>
+									<select class='selector'>
+										<option>Select one</option>
+									</select>
+								</div>
+								<div id='dropdown'>
+									<p id='selecttext'>Bedrooms:</p>
+									<select class='selector'>
+										<option>Select one</option>
+									</select>
+								</div>
+							</div>
+							<input type="image" src='images/search-submit.png' class='submit'>
+						</form>
+					</div>
+				</div>
+				<div class='clear'></div>
+			</div>
+		</div>
+			<div id='featured'>
+				<div class='wrapper'>
+					<div class='feature-box'>
+						<img src='images/feature-home.png'>
+						<h2>Buy a home</h2>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+							text ever since the 1500s, when an unknown</p>
+					</div>
+					<div class='feature-box'>
+						<img src='images/feature-home.png'>
+						<h2>Sell a home</h2>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+							text ever since the 1500s, when an</p>
+					</div>
+					<div class='feature-box' id='last'>
+						<img src='images/feature-home.png'>
+						<h2>Rent a home</h2>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+							text ever since the 1500s, when an unknown printer took</p>
+					</div>
+				</div>		
+			</div>
+			<div id='properties'>
+				<div class='wrapper'>
+					<div class='property'>
+						<img src='images/properry-img.jpg'>
+						<div id='property-find'>
+							<a href='#'>
+								<p>4605 Bayonne Court</p>
+								<p>Arlington, TX 76016</p>
+							</a>
+						</div>
+					</div>
+					<div class='property'>
+						<img src='images/properry-img.jpg'>
+						<div id='property-find'>
+							<a href='#'>
+								<p>4605 Bayonne Court</p>
+								<p>Arlington, TX 76016</p>
+							</a>
+						</div>
+					</div>
+					<div class='property'>
+						<img src='images/properry-img.jpg'>
+						<div id='property-find'>
+							<a href='#'>
+								<p>4605 Bayonne Court</p>
+								<p>Arlington, TX 76016</p>
+							</a>
+						</div>
+					</div>
+					<div class='property'>
+						<img src='images/properry-img.jpg'>
+						<div id='property-find'>
+							<a href='#'>
+								<p>4605 Bayonne Court</p>
+								<p>Arlington, TX 76016</p>
+							</a>
+						</div>
+					</div>
+					<div class='property'>
+						<img src='images/properry-img.jpg'>
+						<div id='property-find'>
+							<a href='#'>
+								<p>4605 Bayonne Court</p>
+								<p>Arlington, TX 76016</p>
+							</a>
+						</div>
+					</div>
+					<div class='property'>
+						<img src='images/properry-img.jpg'>
+						<div id='property-find'>
+							<a href='#'>
+								<p>4605 Bayonne Court</p>
+								<p>Arlington, TX 76016</p>
+							</a>
+						</div>
+					</div>
+					<div class='property'>
+						<img src='images/properry-img.jpg'>
+						<div id='property-find'>
+							<a href='#'>
+								<p>4605 Bayonne Court</p>
+								<p>Arlington, TX 76016</p>
+							</a>
+						</div>
+					</div>
+					<div class='property'>
+						<img src='images/properry-img.jpg'>
+						<div id='property-find'>
+							<a href='#'>
+								<p>4605 Bayonne Court</p>
+								<p>Arlington, TX 76016</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id='footer-top'>
+				<div class='wrapper'>
+					<div id='footer-content'>
+						<div id='footer-form' class='left'>
+							<h2>Member login</h2>
+							<form action='' method='POST'>
+								<input type='text' placeholder="User name" class='login'>
+								<input type='password' placeholder="Password" class='login'>
+								<input type='submit' id='login-submit' value=''>
+							</form>
+						</div>
+						<div id='footer-form' class='right'>
+							<h2>Subscribe to our weekly newsletter</h2>
+							<form action='' method='POST'>
+								<input type='text' placeholder="email address" id='mail'>
+								<input type='submit' id='mail-submit' value=''>
+							</form>
+						</div>
+						<div id='footer-member' class="left">
+							<h2 class='left'>Not a member yet</h2>
+							<a href='#' class='right'>Signup Now</a>
+							<div class='clear'></div>
+						</div>
+						<div id='footer-social' class='left'>
+							<ul>
+								<li><a href='#'><img src='images/soc-fb.png'></a></li>
+								<li><a href='#'><img src='images/soc-twitter.png'></a></li>
+								<li><a href='#'><img src='images/soc-gplus.png'></a></li>
+							</ul>
+						</div>
+						<div class='clear'></div>
+					</div>
+				</div>
+			</div>
+			<div id='footer-bottom'>
+				<div class='wrapper'>
+					<div id='footer-bottom-block'>
+						<h3>About us</h3>
+						<ul>
+							<li><a href='#'>About us</a></li>
+							<li><a href='#'>Why us</a></li>
+							<li><a href='#'>Customer Stories</a></li>
+							<li><a href='#'>Press Resources</a></li>
+							<li><a href='#'>Press Releases</a></li>
+							<li><a href='#'>Contact us</a></li>
+						</ul>
+					</div>
+					<div id='footer-bottom-block'>
+						<h3>Proparties</h3>
+						<ul>
+							<li><a href='#'>Rent a home</a></li>
+							<li><a href='#'>Lease a home</a></li>
+							<li><a href='#'>Buy a home</a></li>
+							<li><a href='#'>Sell a home</a></li>
+							<li><a href='#'>Ask advices</a></li>
+						</ul>
+					</div>
+					<div class='footer-bottom-block-wide'>
+						<h3>Costamer Testimonials</h3>
+						<div id='customer-nav'>
+							<a onclick="plusSlides(-1)"><img src='images/testimonial-prev.png'></a>
+							<a onclick="plusSlides(1)"><img src='images/testimonial-next.png'></a>
+						</div>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industr standard dummy
+						text ever since the 1500s, when an unknown printer took a</p>
+						<p class='bold'>Lorem Ipsum is simply</p>
+						<p class='bold'>Owner, Lorem Ipsum</p>
+					</div>
+					<div class='footer-bottom-block-wide'>
+						<h3>Costamer Testimonials 2</h3>
+						<div id='customer-nav'>
+							<a onclick="plusSlides(-1)"><img src='images/testimonial-prev.png'></a>
+							<a onclick="plusSlides(1)"><img src='images/testimonial-next.png'></a>
+						</div>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industr standard dummy
+						text ever since the 1500s, when an unknown printer took a</p>
+						<p class='bold'>Lorem Ipsum is simply</p>
+						<p class='bold'>Owner, Lorem Ipsum</p>
+					</div>
+					<div class='footer-bottom-block-wide'>
+						<h3>Costamer Testimonials 3</h3>
+						<div id='customer-nav'>
+							<a onclick="plusSlides(-1)"><img src='images/testimonial-prev.png'></a>
+							<a onclick="plusSlides(1)"><img src='images/testimonial-next.png'></a>
+						</div>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industr standard dummy
+						text ever since the 1500s, when an unknown printer took a</p>
+						<p class='bold'>Lorem Ipsum is simply</p>
+						<p class='bold'>Owner, Lorem Ipsum</p>
+					</div>
+					<div id='footer-bottom-block'>
+						<img src='images/logo-footer.png'>
+						<p>&copy; cssauthor.com</p>
+					</div>
+					<div class='clear'></div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/script.js"></script>
+</html>

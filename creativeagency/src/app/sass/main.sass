@@ -1,0 +1,285 @@
+@import "colors"
+@import "fontello"
+@import "fonts"
+@import "reset"
+@import "mixins"
+
+body
+    color: $white
+h1,h2,h3,h4,h5,h6
+    font-family: "Gotham-Bold"
+    font-size: 152px
+    text-align: center
+    text-transform: uppercase
+    color: $white
+h2
+    font-size: 24px
+p
+    font-family: "Gotham-Book"
+    font-size: 15px
+
+.header
+    background: url('../img/header_bg.jpg')
+    background-size: cover
+    &__jumbotron
+        padding-top: 274px
+        text-align: center
+        padding-bottom: 100px
+    &__desc
+        color: $active-color
+        letter-spacing: 18px
+        padding-bottom: 117px
+    &__scroll
+        text-transform: none
+        padding-bottom: 24px
+    &__container
+        border-bottom: 1px solid $grey
+    &__btn
+        font-size: 24px
+        padding: 24px
+        border: 1px solid $white
+        border-radius: 50%
+        background-color: transparent
+        color: $white
+        &:focus
+            outline: 0
+
+.navbar-nav
+    a
+        display: block
+        color: $white
+        text-decoration: none
+        padding-bottom: 30px
+        margin-top: 46px
+        &::after
+            content: ''
+            display: block
+            width: 100%
+            height: 6px
+            background-color: $active-color
+            transform: translateY(39px) scale(0)
+            transition: all 0.2s
+        &:hover
+            &::after
+                transform: translateY(39px) scale(1)
+    &__item
+        margin-left: 30px
+
+.news
+    &__left
+        padding: 0 30px !important
+        background-color: $dark
+        text-align: left
+        &__info
+            list-style: none
+            display: flex
+            margin-left: -56px
+            padding-top: 83px
+            li
+                margin-left: 10px
+                padding: 0 10px
+                border-left: 1px solid $white
+            li:first-child
+                border: none
+        h4
+            font-size: 25px
+            text-align: left
+    &__image
+            object-fit: cover
+            width: 100%
+            height: 100%
+    &__right
+        @extend .news__left
+        background-color: $grey-alt
+        color: $dark
+        h4
+            color: $dark
+        &__info
+            @extend .news__left__info
+            li
+                border-left: 1px solid $dark
+
+.features
+        background-color: $active-color
+        position: relative
+        padding-bottom: 60px
+        &__title
+            padding-top: 177px
+            padding-bottom: 140px
+            font-size: 37px
+            position: relative
+            z-index: 1
+        &__backtext
+            display: block
+            position: absolute
+            top: 48px
+            left: 41.5%
+            z-index: 0
+            margin-right: 100px
+            font-size: 247px
+            color: rgba($white, 0.2)
+            font-family: 'Roboto Condensed', sans-serif
+            font-weight: 700
+        &__feature
+            text-align: center
+
+.feature
+    &__title
+        font-size: 18px
+        padding-top: 48px
+    &__icon
+        font-size: 48px
+        padding: 36px
+        background-color: desaturate(lighten($active-color, 5%), 10%)
+        border-radius: 50%
+        color: $white
+
+.blog
+    @extend .features
+    background-color: $white
+    color: $dark
+    &__title
+            @extend .features__title
+            color: $dark
+            padding-bottom: 70px
+    &__backtext
+            @extend .features__backtext
+            color: rgba($dark, 0.2)
+            left: 44%
+    &__desc
+            font-size: 30px
+            text-align: center
+            padding-bottom: 70px
+    &-item
+        &__header
+            @extend .feature__title
+            color: $active-color
+            font-size: 16px
+        &__image
+            object-fit: cover
+            width: 100%
+
+.reviews
+    @extend .features
+    padding-top: 40px
+    &__icon
+        font-size: 60px
+        padding-right: 10px
+
+.application
+    background: url('../img/app-bg.jpg')
+    background-size: cover
+    padding-top: 100px
+    padding-bottom: 100px
+    text-align: left
+    &__header
+        font-size: 24px
+        padding-top: 140px
+        padding-bottom: 20px
+        text-align: left
+    &__info
+        padding: 0 40px
+    &__image
+        width: 300px
+        object-fit: contain
+        height: auto
+    &-list
+        list-style: none
+        padding: 0
+        margin: 0
+        &__item
+            background-color: $active-color
+            padding: 10px 20px
+            margin-bottom: 20px
+            text-transform: uppercase
+            font-family: 'Gotham-Bold', sans-serif
+            width: 80%
+            &_second
+                @extend .application-list__item
+                width: 85%
+            &_third
+                @extend .application-list__item
+                width: 90%
+
+.team
+    @extend .blog
+    position: relative
+    &__backtext
+        @extend .blog__backtext
+        color: rgba($dark, 0.2)
+        left: 44%
+    &__header
+        @extend .blog__title
+        color: $dark
+        padding-bottom: 70px
+    &__desc
+        @extend .blog__desc
+    &-item
+        &__title
+            position: absolute
+            background-color: $white
+            text-align: center
+            width: 216px
+            bottom: -10%
+            left: 20px
+            p
+                margin-top: -10px
+        &__header
+            @extend .blog-item__header
+            padding: 10px 40px
+
+.response
+    background: url('../img/submit-bg.jpg')
+    background-size: cover
+    padding-top: 100px
+    padding-bottom: 100px
+    text-align: left
+    &__backtext
+        @extend .blog__backtext
+        color: rgba($white, 0.2)
+    &__title
+        @extend .blog__title
+        color: $white
+    &__form
+        padding-top: 40px
+        &__input
+            outline: 0
+            background-color: transparent
+            border-radius: 0
+            padding: 10px
+            width: 348px
+            margin-right: 28px
+            border: 1px solid $white
+            color: $white
+            font-size: 15px
+            @include placeholder 
+                color: $white
+            &_message
+                @extend .response__form__input
+                margin-top: 28px
+                width: 100%
+            &_last
+                @extend .response__form__input
+                margin-right: 0
+        &__submit
+            background-color: $active-color
+            display: block
+            color: $white
+            padding: 10px 50px
+            text-transform: uppercase
+            font-size: 24px
+            border: 0
+            outline: 0
+            margin: 28px auto
+
+.footer
+    background-color: $dark
+    font-family: 'Roboto', sans-serif
+    font-size: 13px
+    &__inner
+        padding: 40px 0
+
+.map
+    height: 333px
+    background-color: $dark
+@import "media"

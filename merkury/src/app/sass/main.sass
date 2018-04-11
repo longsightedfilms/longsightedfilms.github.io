@@ -1,0 +1,268 @@
+@import "colors"
+@import "fontello"
+@import "fonts"
+@import "reset"
+@import "mixins"
+
+body
+    font-family: 'Roboto', sans-serif
+    color: $white
+.header
+    background: url('../img/header_bg.jpg');
+    background-size: cover
+    height: 1100px
+    &__logo
+        height: 65px
+        width: auto
+    &__jumbotron
+        padding-top: 100px
+        text-align: center
+    &__title
+        font-size: 60px
+        font-weight: 100
+    &__desc
+        font-size: 36px
+        color: $light-blue
+        margin-bottom: 80px
+    &__button
+        display: block
+        color: $white
+        padding: 12px 48px
+        margin: 0 auto
+        margin-bottom: 80px
+        background-color: $active-color
+        border: 1px solid $active-color
+        border-radius: 25px
+        transition: all 0.2s
+        font-weight: 700
+        max-width: 200px
+        &:hover
+            color: $white
+            text-decoration: none
+        &:focus
+            outline: 0
+        &:active
+            background-color: darken($active-color, 10%)
+            color: darken($white, 10%)
+            outline: 0
+
+.navbar
+    margin-top: 68px
+    padding: 0 120px
+    &-item
+        font-size: 18px
+        margin-left: 50px
+        &__link
+            color: $white
+            transition: all 0.2s
+            &:hover
+                color: $active-color
+                text-decoration: none
+            &:active
+                color: darken($active-color, 5%)
+        &__button
+            color: $active-color
+            padding: 12px 36px
+            border: 1px solid $active-color
+            border-radius: 25px
+            transition: all 0.2s
+            &:hover
+                color: $active-color
+                text-decoration: none
+            &:active
+                border: 1px solid darken($active-color, 5%)
+                color: darken($active-color, 5%)
+.features
+    &__image
+        margin: 0 auto
+        margin-top: -540px
+        margin-bottom: 100px
+        display: flex
+.feature
+    text-align: center
+    &__icon
+        color: $active-color
+        font-size: 96px
+    &__title
+        color: $dark-blue
+        font-size: 24px
+        font-weight: 700
+    &__description
+        color: $light-blue
+        padding-bottom: 30px
+    &__button
+        font-weight: 700
+        color: $dark-blue
+        font-size: 18px
+        padding: 10px 80px
+        border: 1px solid $gray
+        border-radius: 25px
+        transition: all 0.2s
+        &:hover
+            background-color: $active-color
+            border: 1px solid $active-color
+            color: $white
+            text-decoration: none
+        &:active
+            background-color: darken($active-color, 5%)
+            color: $white
+.application
+    &-main
+        padding-top: 280px
+        padding-bottom: 100px
+    &__title
+        font-size: 60px
+        font-weight: 100
+        color: $dark-blue
+        padding-bottom: 20px
+    &__description
+        padding: 10px 0
+        color: $light-blue
+        max-width: 60%
+    &_left
+        padding: 0 80px
+    &__image
+        object-fit: cover
+        object-position: 0 50%
+        height: 100%
+    &-list
+        color: $active-color
+        font-size: 22px
+        list-style: none
+        padding: 0
+        padding-top: 40px
+        &__item
+            background: url('../img/list-check-item.png') no-repeat top left
+            padding-left: 45px
+            padding-bottom: 24px
+.drag-drop
+    background: url('../img/header_bg.jpg');
+    background-size: cover
+    padding: 150px 0
+    &_right
+        padding-left: 100px
+    &__title
+        font-size: 60px
+        font-weight: 100
+    &__image
+        padding-left: 20px
+    &__text
+        padding: 10px 0
+        color: $light-blue
+        max-width: 80%
+    &__button
+        display: inline-flex
+        appearance: none
+        background: none
+        border: 1px solid $light-blue
+        border-radius: 50%
+        padding: 0
+        margin-right: 20px
+        color: $light-blue
+        transition: all 0.2s
+        &:hover
+            border: 1px solid $active-color
+            color: $active-color
+        &:focus
+            outline: 0
+        &:active
+            background: $active-color
+            border: 1px solid $active-color
+            color: $white
+    &__icon
+        display: block
+        font-size: 20px
+.template
+    padding: 100px 0
+    color: $dark-blue
+    text-align: center
+    position: relative
+    @extend .pricing
+    &__title
+        font-weight: 100
+        font-size: 60px
+        padding-bottom: 20px
+    &__description
+        color: $light-blue
+        font-size: 18px
+        padding-bottom: 50px
+.pricing
+    @extend .template
+    &__title
+        @extend .template__title
+        font-weight: 100
+        font-size: 60px
+        padding-bottom: 100px
+    &__description
+        @extend .template__description
+        padding: 80px 0 40px 0
+    &__button
+        @extend .header__button
+        margin-bottom: 0
+        position: relative
+        z-index: 1
+        &_no-border
+            display: flex
+            background: $white
+            position: relative
+            padding: 10px 30px
+            width: 230px
+            margin: 0 auto
+            z-index: 0
+    &__decoration
+        border: 1px solid $gray
+        width: 100%
+        position: absolute
+        top: 45%
+        z-index: 0
+.price-box
+    text-align: center
+    box-shadow: 0px 0px 50px 0px rgba(199,199,199,1);
+    padding: 30px
+    color: $dark-blue
+    max-width: 90%
+    &__title
+        text-transform: uppercase
+        font-weight: 400
+    &__currency
+        font-weight: 700
+        font-size: 40px
+    &__price
+        font-weight: 700
+        font-size: 72px
+    &__period
+        font-size: 24px
+        color: $light-blue
+    &__features
+        list-style: none
+        padding: 0
+    &__item
+        color: $light-blue
+        font-size: 18px
+        &_check
+            background: url('../img/list-check-item.png') no-repeat top left
+            padding-left: 24px
+            padding-bottom: 12px
+        &_fail
+            background: url('../img/list-fail-item.png') no-repeat top left
+            padding-left: 24px
+            padding-bottom: 12px
+.footer
+    background-color: $dark-blue
+    color: $light-blue
+    padding: 40px 0
+    &-nav
+        display: flex
+        list-style: none
+        &__item
+            color: $light-blue
+            margin-right: 50px
+            transition: all 0.2s
+            &:hover
+                text-decoration: none
+                color: $white
+            &:active
+                color: $active-color
+            &_social
+                margin-right: 30px
+@import "media"
