@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <title>Lago Naki</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/main.css">
+    <script>
+        // Mac OS CSS Fixes
+        if (navigator.userAgent.indexOf('Mac OS X') != -1) {
+            var style = document.createElement('link');
+            style.rel = 'stylesheet';
+            style.href = 'css/macos_fix.css';
+
+            document.getElementsByTagName('head')[0].appendChild(style);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <nav class="navbar navbar-expand-lg navbar-light header__navbar">
+                <div class="header__top">
+                  <a class="navbar-brand" href="/"><img data-src="img/header__logo.png" alt="Логотип компании" class="lazy-webp"></a>
+                  <div class="header__title">
+                    <b>Ваша личная здравница «Лаго-Наки»</b>
+                    <p>СПЕЦИАЛИЗИРОВАННЫЙ ЦЕНТР ЛЕЧЕНИЯ ПОЗВОНОЧНИКА<br />И СОПУТСТВУЮЩИХ ЗАБОЛЕВАНИЙ</p>
+                  </div>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="header__contacts d-none d-lg-block">
+                    <div class="header__phones">
+                      <a href="tel:+78612388791" class="header__phone">+7 (861) 238-87-91</a>
+                      <a href="tel:+79604991919" class="header__phone">+7 (960) 499-19-19</a>
+                    </div>
+                    <a href="#" class="button header__button" onclick="openModal('#callback', event)"><p>Получить консультацию</p></a>
+                  </div>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">Лечение позвоночника</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Лечебные программы</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="apartments.html">Номера</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="services.html">Дополнительные услуги</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="reviews.html">Отзывы гостей</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="contacts.html">Услуги</a>
+                      </li>
+                    </ul>
+                    <div class="header__contacts d-flex d-lg-none">
+                      <div class="header__phones">
+                        <a href="tel:+78612388791" class="header__phone">+7 (861) 238-87-91</a>
+                        <a href="tel:+79604991919" class="header__phone">+7 (960) 499-19-19</a>
+                      </div>
+                      <a href="#" class="button header__button" onclick="openModal('#callback', event)"><p>Получить консультацию</p></a>
+                      <p class="header__address"><b>Россия, Краснодарский край</b> Майкопский район, хутор Красный мост, улица Шоссейная, дом 20.</p>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="contacts">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1>Контакты</h1>
+              <p class="contacts__subheading">Здравница "Лаго-Наки"</p>
+              <ul class="list">
+                <li>
+                  <b>Адрес:</b>
+                  <p>385781, Республика Адыгея, Майкопский район, хутор Красный мост, улица Шоссейная, дом 20.</p>
+                </li>
+                <li>
+                  <b>Телефон:</b>
+                  <p><a href="tel:+78612989044">8 (861) 298-90-44</a>, ежедневно с 09:00 – 22:00</p>
+                </li>
+                <li>
+                  <b>E-mail:</b>
+                  <a href="mailto:info@lagonaki.com">info@lagonaki.com</a>
+                </li>
+              </ul>
+              <h2 class="block__heading">Как добраться</h2>
+              <p class="contacts__text"><b>Авиаперелет:</b> из аэропорта города Краснодар – заказ трансфера (120 км)</p>
+              <p class="contacts__text"><b>Железными дорогами:</b> от станции "Майкоп" (Белореченская-Хаджох, Краснодарского региона Северо-Кавказской железной дороги) – заказ трансфера (40 км)</p>
+              <p class="contacts__text"><b>Автомобилем:</b> направление на город Майкоп, перед Майкопом – съезд на Туапсе, далее - на п. Краснооктябрьский. В п. Краснооктябрьском – следовать указателям «Санаторий «Лаго-Наки» (5 км), после поворота перед заправкой – ехать около 5 км по главной дороге, не сворачивая. Из хутора Красный Мост повернуть перед стелой «Здравница «Лаго-Наки» направо. Перед вами – ворота Здравницы.</p>
+              <p class="contacts__text contacts__text_last">Представительство в Москве<br/>Адрес: 115419, г. Москва, ул. Орджоникидзе, 11, стр. 12<br/>Телефон: +7 (499) 647-50-13</p>
+              <a href="#" class="contacts__link">Правовая информация</a>
+              <div class="contacts__map" id="map"></div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <section class="licenses">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="block__heading">Лицензии Здравницы «Лаго-Наки»</h3>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <a href="img/licenses/img_1.jpg" class="licenses__link"><img src="img/licenses/img_1.jpg"></a>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <a href="img/licenses/img_2.jpg" class="licenses__link"><img src="img/licenses/img_2.jpg"></a>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <a href="img/licenses/img_3.jpg" class="licenses__link"><img src="img/licenses/img_3.jpg"></a>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <a href="img/licenses/img_4.jpg" class="licenses__link"><img src="img/licenses/img_4.jpg"></a>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <a href="img/licenses/img_5.jpg" class="licenses__link"><img src="img/licenses/img_5.jpg"></a>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <a href="img/licenses/img_6.jpg" class="licenses__link"><img src="img/licenses/img_6.jpg"></a>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <a href="img/licenses/img_7.jpg" class="licenses__link"><img src="img/licenses/img_7.jpg"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer footer__page">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-8">
+              <div class="footer__logo">
+                <img src="img/header__logo.png">
+                <div>
+                  <b>Здравница “Лаго-Наки”</b>
+                  <p>ЗАО "Терминал"</p>
+                  <a href="#">Политика конфиденциальности</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <ul class="footer__socials">
+                <li><a href="https://instagram.com/lagonakicom/?roistat_visit=1486748"><img src="img/icons/instagram.png"></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100007627248398&fref=ts&roistat_visit=1486748"><img src="img/icons/facebook.png"></a></li>
+                <li><a href="https://vk.com/lagonaki_com?roistat_visit=1486748"><img src="img/icons/vk.png"></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-5 col-md-12">
+              <ul class="footer__nav">
+                <li><a href="index.html">Лечение позвоночника</a></li>
+                <li><a href="index.html">Лечебные программы</a></li>
+                <li><a href="apartments.html">Номера</a></li>
+                <li><a href="services.html">Дополнительные услуги</a></li>
+                <li><a href="reviews.html">Отзывы гостей</a></li>
+                <li><a href="licenses.html">Лицензии</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div id="callback" class="mfp-popup mfp-hide">
+      <p class="footer__form-heading"><b>Оставь свои контактные данные,</b>наш эксперт перезвонит в течение дня <br/>и поможет выбрать номер и правильную программу лечения.</p>
+      <form action="#" method="post" onsubmit="return send_request(this, event)">
+        <div class="form-row">
+          <input type="text" name="name" class="form-control input" placeholder="Имя" required>
+          <input type="tel" name="phone" class="form-control input" placeholder="Телефон" required>
+          <button type="submit" class="button"><p>Получить консультацию</p></button>
+          <p class="note">Нажимая на кнопку "Получить консультацию", Вы даёте согласие на обработку своих персональных данных.</p>
+        </div>
+      </form>
+    </div>
+    <div id="thankyou" class="mfp-popup mfp-hide">
+      <b class="mfp-popup__heading">Спасибо! Мы вам перезвоним в течение дня</b>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/main.js"></script>
+    <script>
+      function send_request(form, event) {
+        event.preventDefault();
+        event.stopPropagation();
+        $.ajax({
+          url: '/request.php',
+          type: "POST",
+          data: $(form).serialize()
+        });
+        openModal('#thankyou', event);
+        return false;
+      };
+      document.addEventListener('DOMContentLoaded', function () {
+        ymaps.ready(init);
+          function init() {
+            var myMap = new ymaps.Map("map", {
+              center: [44.542618, 40.106819],
+              zoom: 16
+            });
+
+            var myPlacemark = new ymaps.Placemark([44.543418, 40.105919], {}, {
+              preset: 'islands#redVegetationIcon'
+            });
+            myMap.geoObjects.add(myPlacemark);
+          }
+      });
+    </script>
+</body>
+
+</html>

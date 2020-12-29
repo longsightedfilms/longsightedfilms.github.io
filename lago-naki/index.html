@@ -1,0 +1,1341 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <title>Lago Naki</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/main.css">
+    <script>
+    // Mac OS CSS Fixes
+      if (navigator.userAgent.indexOf('Mac OS X') != -1) {
+        var style = document.createElement('link');
+        style.rel = 'stylesheet';
+        style.href = 'css/macos_fix.css';
+
+        document.getElementsByTagName('head')[0].appendChild(style);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <nav class="navbar navbar-expand-lg navbar-light header__navbar">
+                <div class="header__top">
+                  <a class="navbar-brand" href="/"><img data-src="img/header__logo.png" alt="Логотип компании" class="lazy-webp"></a>
+                  <div class="header__title">
+                    <b>Ваша личная здравница «Лаго-Наки»</b>
+                    <p>СПЕЦИАЛИЗИРОВАННЫЙ ЦЕНТР ЛЕЧЕНИЯ ПОЗВОНОЧНИКА<br/>И СОПУТСТВУЮЩИХ ЗАБОЛЕВАНИЙ</p>
+                  </div>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="header__contacts d-none d-lg-block">
+                    <div class="header__phones">
+                      <a href="tel:+78612388791" class="header__phone">+7 (861) 238-87-91</a>
+                      <a href="tel:+79604991919" class="header__phone">+7 (960) 499-19-19</a>
+                    </div>
+                    <a href="#" class="button header__button" onclick="openModal('#callback', event)"><p>Получить консультацию</p></a>
+                  </div>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Лечение позвоночника</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Лечебные программы</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Номера</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Истории гостей</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Услуги</a>
+                      </li>
+                    </ul>
+                    <div class="header__contacts d-flex d-lg-none">
+                      <div class="header__phones">
+                        <a href="tel:+78612388791" class="header__phone">+7 (861) 238-87-91</a>
+                        <a href="tel:+79604991919" class="header__phone">+7 (960) 499-19-19</a>
+                      </div>
+                      <a href="#" class="button header__button" onclick="openModal('#callback', event)"><p>Получить консультацию</p></a>
+                      <p class="header__address"><b>Россия, Краснодарский край</b> Майкопский район, хутор Красный мост, улица Шоссейная, дом 20.</p>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="jumbotron">
+        <div class="jumbotron__image">
+          <img data-src="img/jumbotron__bg.png?v=2" class="d-none d-lg-block lazy-webp">
+          <img data-src="img/jumbotron__bg_mobile.jpg" class="d-block d-lg-none lazy">
+        </div>
+        <div class="jumbotron__decor"></div>
+        <div class="jumbotron__content">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h1>Вернем жизнь <br/>без боли в позвоночнике, <br/>без грыж, без операций</h1>
+              </div>
+              <div class="col-xl-6 col-lg-8">
+                <div class="jumbotron__title">Избавим от болей в спине и суставах</div>
+                <div class="jumbotron__block">
+                  <p><b>При помощи оптимального сочетания:</b><br/> массажно-манульных практик, остеопатии, висцеральной хиропрактики, абдоминального массажа, кинезиотерапии и лфк, восточной медицины и авторских методик, <br/>которых нет больше нигде</p>
+                </div>
+                <a href="#" class="button" onclick="openModal('#callback', event)"><p>Получить консультацию</p></a>
+                <div class="jumbotron__note">
+                  <p><b>Россия, Краснодарский край</b><br/>Майкопский район, хутор Красный мост, <br/>улица Шоссейная, дом 20.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <section class="pain">
+        <div class="pain__decor"></div>
+        <div class="pain__decor_left lazy" data-bg="url(./img/decors/pain__decor_left.svg)"></div>
+        <div class="pain__decor_right lazy" data-bg="url(./img/decors/pain__decor_right.svg)"></div>
+        <div class="pain__content">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h3 class="block__heading">Послушай, я знаю что тебе больно.</h3>
+                <p class="block__desc">— Ничего ты не знаешь… У тебя то нет грыжи, болей в спине… Ты не знаешь, какого это, «лезть на стену» от боли в ноге, и чувствовать себя старой развалиной в 40 лет.</p>
+                <p class="pain__text d-block d-lg-none">Вообще то знаю, Я сам через это прошел и знаю, как тяжело жить, когда просто выспаться — уже большое счастье.</p>
+              </div>
+              <div class="col-xl-4 col-lg-6">
+                <img data-src="img/pain__image.png" class="d-none d-lg-block pain__spine lazy-webp">
+                <img data-src="img/pain__image-mobile.jpg" class="d-block d-lg-none pain__spine lazy">
+              </div>
+              <div class="col-xl-6 col-lg-6">
+                <p class="pain__text d-none d-lg-block">Вообще то знаю, Я сам через это прошел и знаю, как тяжело жить, когда просто выспаться — уже большое счастье.</p>
+                <p class="pain__text"><span>Боли в спине, протрузии и грыжи межпозвонкового диска</span> — проблема очень многих людей. На сколько я знаю <b>— более 80% людей старше 30 лет</b> имеют то, что врачи называют дегенеративно – дистрофические заболевания позвоночника в той или иной степени тяжести.</p>
+                <p class="pain__text">А с развитием современных технологий, компьютеров и сидения в офисном стуле по 8 часов подряд можно говорить о том, что грыжи и протрузии встречаются и у людей в возрасте 25 лет.</p>
+                <hr>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="history">
+          <div class="history__decor"></div>
+          <div class="history__content">
+            <div class="container">
+              <div class="row justify-content-end">
+                <div class="col-xl-6 col-lg-7">
+                  <h3 class="block__heading">Всё это <br />я прочувствовал <br />на своей «шкуре».</h3>
+                  <p class="block__desc">— Ну да, расскажи мне…</p>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-xl-6 col-lg-5">
+                  <img data-src="img/history__run-mobile.png" class="d-block d-md-none history__image lazy-webp">
+                  <img data-src="img/history__run.png" class="d-none d-md-block history__image lazy-webp">
+                </div>
+                <div class="col-xl-6 col-lg-7">
+                  <p class="history__text">Всю свою сознательную жизнь <br/><b>я активно занимался спортом и следил за собой,</b> сам образ жизни и выбор профессии не оставлял мне выбора.</p>
+                  <p class="history__text">После окончания Высшего Военного Командного Училища попал по распределению в бригаду специального назначения защищать свою Родину там, <br/>где защитить ее очень сложно. <br/>Служба в «спецназе» дело очень не простое, <br/><span>от травм никто не застрахован.</span></p>
+                  <p class="history__text">Там я получил травму спины. Не хочу грузить <br/>тебя своими проблемами, просто скажу <br/><span>— я знаю что такое боль.</span></p>
+                  <p class="history__note">И все твои проблемы я понимаю.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="history-continue-1">
+        <div class="history-continue-1__decor_left lazy" data-bg="url(./img/decors/history-cont__decor-1.svg)"></div>
+        <div class="history-continue-1__decor_right lazy" data-bg="url(./img/decors/history-cont__decor-2.svg)"></div>
+        <div class="history-continue-1__decor_center lazy" data-bg="url(./img/decors/history-cont__decor-3.svg)"></div>
+        <div class="history-continue-1__decor"></div>
+        <div class="history-continue-1__content">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h3 class="block__heading">Я мучился со спиной несколько лет… <br/>Не было врача в моем городе, <br/>которого я не знал бы лично.</h3>
+                <p class="block__desc">— Как я тебя понимаю…</p>
+              </div>
+              <div class="col-xl-7 col-lg-9">
+                <p class="history-continue-1__text">Неврологи, травматологи, мануальные терапевты и многие другие… Буквально раз в неделю я стабильно ходил на прием к новому врачу, <b>потому что предыдущий мне помочь не мог.</b></p>
+                <p class="history-continue-1__text">Не на долго помогали таблетки, массаж, физиотерапия и уколы, <br/><span>но именно не на долго</span>. Я мог отдать 6000 рублей за прием врача <br/>и еще 3000 рублей за медикаменты, а спустя две недели снова почувствовать боль в спине… Никто из них не смог обеспечить долгий эффект.</p>
+                <p class="history-continue-1__text">Помогали только сильные обезболивающие препараты, <br/><b>но принимать их всю жизнь я не хотел.</b></p>
+                <img data-src="img/history-cont__img.jpg" class="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="history-continue-2">
+        <div class="history-continue-2__decor_left lazy" data-bg="url(./img/decors/history-cont-2__decor-1.svg)"></div>
+        <div class="history-continue-2__decor_right lazy" data-bg="url(./img/decors/history-cont-2__decor-2.svg?v=2)"></div>
+        <div class="history-continue-2__decor"></div>
+        <div class="history-continue-2__content">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-7 col-lg-9">
+                <div class="history-continue-2__note">Сколько усилий я потратил на это «лечение»?</div>
+              </div>
+              <div class="col-xl-7 col-lg-9">
+                <p class="history-continue-2__title">А потом как гром среди ясного неба: <br/>Вертебролог сказал, что мне пора на операцию.</p>
+                <p class="history-continue-2__title_color">Он сказал, что только скальпель <br/>сможет решить мой вопрос…</p>
+                <p class="block__desc">— Мои врачи говорили мне так же…</p>
+              </div>
+              <div class="col-12">
+                <img data-src="img/history-cont-2__img.jpg" class="history-continue-2__img lazy">
+                <div class="history-continue-2__block">
+                  <p class="history-continue-2__text">Согласен, есть случаи, когда просто уже не возможно восстановить межпозвонковый диск, и тогда операция единственный выход, поэтому лучше до этого не доводить, вовремя заниматься проблемой.</p>
+                </div>
+              </div>
+              <div class="col-xl-7 col-lg-8">
+                <p class="history-continue-2__heading"><span>Грыжа — симптом,</span> а не сама проблема. Решать надо проблему — то есть убирать причину появления грыжи, тогда и грыж не будет.</p>
+                <p class="history-continue-2__text">К тому же, операция проводится лишь на одном участке позвоночника за раз, а как правило в процесс развития болезни вовлечены не один а несколько сегментов в разных отделах позвоночника. И после операции на позвоночнике следует обязательная долгая реабилитация... <br/>Как я узнал позже — <span>операция помогает далеко не всем.</span></p>
+                <p class="history-continue-2__cite">«Примерно в 80% всех случаев операции можно избежать полностью. Достаточно профессионально правильно подобранных
+                медицинских процедур <br/>и занятий именно Вам подходящим комплексом упражнений.»</p>
+              </div>
+              <div class="col-xl-5 col-lg-4">
+                <img data-src="img/history-cont-2__doctor.jpg" class="history-continue-2__doctor lazy">
+              </div>
+              <div class="col-12">
+                <p class="history-continue-2__author"><b>Руслан Дамирович Сибагатуллин</b>Директор медицинской службы Здравницы</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="doctors">
+        <div class="doctors__decor"></div>
+        <div class="doctors__decor_left lazy" data-bg="url(./img/decors/doctors__decor-1.png)"></div>
+        <div class="doctors__decor_right lazy" data-bg="url(./img/decors/doctors__decor-2.svg)"></div>
+        <div class="doctors__content">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h3 class="block__heading">Решение проблемы пришло оттуда, <br/>откуда я не ждал.</h3>
+              </div>
+              <div class="col-xl-6 col-lg-8">
+                <p class="block__desc">— И как же ты ее решил?</p>
+                <p class="doctors__heading">Не поверишь, удачно женился.</p>
+                <p class="doctors__text">Отчасти, просто моя будущая супруга оказалась управляющим акционером Здравницы «Лаго–Наки». Мы с ней и познакомились в Здравнице, уже после моего первого курса лечения.</p>
+                <p class="doctors__text">В Здравницу я приехал как профессиональный фотограф (моя последняя специальность) снимать фестиваль «Шепот небес», после самолета как обычно прихватило спину, вот и пришлось воспользоваться медицинскими услугами Здравницы.</p>
+                <p class="doctors__text">К моему большому удивлению «Лаго – Наки» оказался очень необычным и главное эффективным центром, по лечению заболеваний позвоночника, к удивлению, так как я к тому времени уже полностью разочаровался в медицине.</p>
+              </div>
+              <div class="col-12">
+                <div class="doctors__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide doctors__slider-slide">
+                      <img data-src="img/doctors/img_1.jpg" class="swiper-lazy">
+                      <div class="content">
+                        <b>Руслан Дамирович Сибагатуллин</b>
+                        <p>Директор медицинской службы</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide doctors__slider-slide">
+                      <img data-src="" class="swiper-lazy">
+                      <div class="content">
+                        <b>Алексей Александрович Полковой</b>
+                        <p>Руководитель центра китайской медицины, иглорефлексотерапевт</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide doctors__slider-slide">
+                      <img data-src="" class="swiper-lazy">
+                      <div class="content">
+                        <b>Стебничкая Софья Александровна</b>
+                        <p>Заместитель директора по мед.службе по направлению рефлексотерапия, иглорефлексотерапевт, невролог</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide doctors__slider-slide">
+                      <img data-src="img/doctors/img_2.jpg" class="swiper-lazy">
+                      <div class="content">
+                        <b>Юрий Владимирович Никандров</b>
+                        <p>Иглорефлексотерапевт, невролог</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide doctors__slider-slide">
+                      <img data-src="" class="swiper-lazy">
+                      <div class="content">
+                        <b>Сергей Максимов</b>
+                        <p>Специалист традиционной китайской медицины, массажист</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide doctors__slider-slide">
+                      <img data-src="img/doctors/img_3.jpg" class="swiper-lazy">
+                      <div class="content">
+                        <b>Виталий Кузнецов</b>
+                        <p>Специалист традиционной китайской медицины, массажист</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide doctors__slider-slide">
+                      <img data-src="img/doctors/img_4.jpg" class="swiper-lazy">
+                      <div class="content">
+                        <b>Лидия Николаевна Забудская</b>
+                        <p>Главный врач</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide doctors__slider-slide">
+                      <img data-src="img/doctors/img_5.jpg" class="swiper-lazy">
+                      <div class="content">
+                        <b>Мадина Елкановна Тедеева</b>
+                        <p>Лечащий врач терапевт</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide doctors__slider-slide">
+                      <img data-src="img/doctors/img_6.jpg" class="swiper-lazy">
+                      <div class="content">
+                        <b>Сергей Викторович Пахомов</b>
+                        <p>Остеопат, невролог, мануальный терапевт</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide doctors__slider-slide">
+                      <img data-src="img/doctors/img_7.jpg" class="swiper-lazy">
+                      <div class="content">
+                        <b>Вячеслав Олегович Казаков</b>
+                        <p>Висцеральный терапевт</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide doctors__slider-slide">
+                      <img data-src="" class="swiper-lazy">
+                      <div class="content">
+                        <b>Ольга Шамильевна Лаптева</b>
+                        <p>Гинеколог, гирудотерапевт</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="arrival">
+          <div class="arrival__decor"></div>
+          <div class="arrival__decor_right lazy" data-bg="url(./img/decors/arrival__decor.svg)"></div>
+          <div class="arrival__content">
+            <div class="container">
+              <div class="row">
+                <div class="col-xl-6 col-lg-5 order-1 order-lg-0">
+                  <div class="arrival__image">
+                    <img data-src="img/arrival__img.jpg?v=2" class="lazy">
+                  </div>
+                </div>
+                <div class="col-xl-6 col-lg-7 order-0 order-lg-1">
+                  <h3 class="block__heading">Я отлично помню <br/>день своего приезда <br/>в здравницу.</h3>
+                  <p class="block__desc">— Как это было?</p>
+                  <p class="arrival__text">Сразу после размещения в номере меня пригласили на встречу с лечащим врачом. <span>Из-за боли в спине мне было тяжело передвигаться</span>, поэтому меня сопровождал личный помощник.</p>
+                  <p class="arrival__note">Как я потом узнал, личный помощник помогает каждому гостю.</p>
+                  <p class="arrival__text">Врач провел полный осмотр и опрос – целых 40 минут и назначил мне несколько анализов и МРТ.</p>
+                  <p class="arrival__text">МРТ мне сделали в клинике, в 15 минутах езды от Здравницы. И да, мою запись в клинику и организацию поездки туда и обратно взял на себя <b>личный помощник.</b> Я тогда еще удивился — что же за сервис такой? Окружают заботой по полной программе, ну думаю, наверно, цены на процедуры будут заоблачные, а оказалось, что гораздо ниже московских.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="healing">
+        <div class="healing__decor"></div>
+        <div class="healing__decor_right"></div>
+        <div class="healing__content">
+          <div class="container">
+            <div class="row align-items-end">
+              <div class="col-xl-6 col-lg-8">
+                <p class="block__desc">— А что было дальше?</p>
+                <h3 class="block__heading">А дальше меня начали лечить.</h3>
+                <p class="healing__text">Мой график был расписан очень плотно, с четким указанием времени и последовательности процедур, врач объяснил, почему это так важно.</p>
+                <p class="healing__note">«Мы точно знаем, как та или иная процедура влияет на организм человека. Многие методологии отпуска процедур являются нашими <b>авторскими разработками.</b> У нас собственная школа углубленной переподготовки специалистов по массажу, медсестер и специалистов по традиционной китайской медицине. Составляя план лечения мы учитываем все имеющиеся у вас заболевания и в особенности <span>причины развития дегенеративно – дистрофических изменений в вашем позвоночнике.</span> При таком индивидуальном подходе, каждая последующая процедура дополняет предыдущую и усиливает результат. И только этот комплексный метод правильного сочетания и выстраивания последовательности процедур дает тот результат, о котором мы говорим.»</p>
+              </div>
+              <div class="col-xl-6 col-lg-4">
+                <div class="healing__image">
+                  <div class="healing__circle"></div>
+                  <img data-src="img/healing__img.png" class="lazy-webp">
+                </div>
+              </div>
+              <div class="col-12 d-block d-lg-none">
+                <div class="healing__decors">
+                  <img src="img/decors/healing__decor-left-mobile.svg" class="healing__decor-mobile_left lazy">
+                  <img src="img/decors/healing__decor-right-mobile.svg" class="healing__decor-mobile_right lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="healing-more__content">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 order-0">
+                <b class="healing__heading">Я, конечно, врача послушал, но не поверил, ведь мне и раньше делали физиопроцедуры, назначали иголки и массаж. И надо сказать, что хоть я и заметил отличия в том, как проводят процедуры, но в первые два – три дня, я действительно не чувствовал каких-то существенных изменений в своём состоянии...</b>
+                <p class="block__desc">— Ну вот а ты говоришь <br/>Здравница хорошая. Шарлотаны они все!</p>
+                <h3 class="block__heading">Подожди, не кипятись, <br/>лучше слушай историю дальше.</h3>
+              </div>
+              <div class="col-lg-6 order-2 order-lg-1">
+                <div class="healing__images">
+                  <a href="img/healing/img_1.jpg"><img data-src="img/healing/img_1.jpg" class="lazy"></a>
+                  <a href="img/healing/img_2.jpg"><img data-src="img/healing/img_2.jpg" class="lazy"></a>
+                  <a href="img/healing/img_3.jpg"><img data-src="img/healing/img_3.jpg" class="lazy"></a>
+                </div>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2">
+                <p class="healing__text">Первые несколько дней мне действительно не становилось лучше и я смирился – <span class="red">все как обычно.</span> Но утром пятого дня я вдруг выспался! Впервые за несколько последних лет я проснулся не от того, что мне больно, а от того, что я просто больше не хотел спать.</p>
+                <p class="healing__text">Да, я пропустил несколько процедур… <br/><b>Но какой же это был кайф!</b></p>
+                <p class="healing__text healing__text_pre-note"><span>Я — ВЫСПАЛСЯ!</span>Пока я проводил свой «утренний моцион» <br/>между кроватью, балконом и сан. узлом <br/>я вдруг заметил, что спина меня не беспокоит!</p>
+                <p class="healing__note">Я хожу, я наклоняюсь, я сажусь… А спина не болит!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="shock">
+          <div class="shock__decor_left lazy" data-bg="url(./img/decors/shock__decor-1.svg)"></div>
+          <div class="shock__decor_right lazy" data-bg="url(./img/decors/shock__decor-2.png)"></div>
+          <div class="container">
+            <div class="row justify-content-end">
+              <div class="col-xl-10 order-0">
+                <h3 class="block__heading">Для меня это было шоком!</h3>
+                <p class="block__desc">— Ой не говори, я о таком только мечтаю!</p>
+              </div>
+              <div class="col-lg-6 order-2 order-lg-1">
+                <img data-src="img/shock__img.jpg" class="shock__image lazy">
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2">
+                <p class="shock__text">За годы жизни с грыжами боль стала мне привычной, <br/>она стала неотъемлемой частью моей жизни.<b>А тут вдруг раз — и не болит.</b></p>
+                <p class="shock__text">Да, я все еще чувствовал «скованность», но какой же <br/>это кайф — <span>боли нет!</span> Ощущения захватили меня. <br/>Это как тащить на гору огромный камень, <br/>а потом просто взять и бросить его!</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="procedures">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-10">
+                <h3 class="block__heading">С этого момента на все процедуры я ходил сам, без чужой помощи и не пропускал ни одной.</h3>
+                <p class="block__desc">Я понял: здешние врачи знают свое дело.</p>
+                <p class="procedures__text">Специальный вертебральный массаж – 50 и даже 100 минут, кинезотерапия, физиотерапия, остеопатия, иглоукалывание, вытяжение позвоночника, лечебная физкультура, скандинавская ходьба, плаванье пиявки, гидромассажные ванны.</p>
+              </div>
+              <div class="col-12">
+                <div class="procedures__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="img/procedures/img_1.jpg"><img data-src="img/procedures/img_1.jpg" class="lazy"></a>
+                      <div class="swiper-button-next">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="img/procedures/img_2.jpg"><img data-src="img/procedures/img_2.jpg" class="lazy"></a>
+                      <div class="swiper-button-next">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="img/procedures/img_3.jpg"><img data-src="img/procedures/img_3.jpg" class="lazy"></a>
+                      <div class="swiper-button-next">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="img/procedures/img_4.jpg"><img data-src="img/procedures/img_4.jpg" class="lazy"></a>
+                      <div class="swiper-button-next">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="img/procedures/img_5.jpg"><img data-src="img/procedures/img_5.jpg" class="lazy"></a>
+                      <div class="swiper-button-next">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="img/procedures/img_6.jpg"><img data-src="img/procedures/img_6.jpg" class="lazy"></a>
+                      <div class="swiper-button-next">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="img/procedures/img_7.jpg"><img data-src="img/procedures/img_7.jpg" class="lazy"></a>
+                      <div class="swiper-button-next">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="img/procedures/img_8.jpg"><img data-src="img/procedures/img_8.jpg" class="lazy"></a>
+                      <div class="swiper-button-next">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="img/procedures/img_9.jpg"><img data-src="img/procedures/img_9.jpg" class="lazy"></a>
+                      <div class="swiper-button-next">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="img/procedures/img_10.jpg"><img data-src="img/procedures/img_10.jpg" class="lazy"></a>
+                      <div class="swiper-button-next">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="img/procedures/img_11.jpg"><img data-src="img/procedures/img_11.jpg" class="lazy"></a>
+                      <div class="swiper-button-next">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="img/procedures/img_12.jpg"><img data-src="img/procedures/img_12.jpg" class="lazy"></a>
+                      <div class="swiper-button-next">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="img/procedures/img_13.jpg"><img data-src="img/procedures/img_13.jpg" class="lazy"></a>
+                      <div class="swiper-button-next">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="img/procedures/img_14.jpg"><img data-src="img/procedures/img_14.jpg" class="lazy"></a>
+                      <div class="swiper-button-next">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="img/procedures/img_15.jpg"><img data-src="img/procedures/img_15.jpg" class="lazy"></a>
+                      <div class="swiper-button-next">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="img/procedures/img_16.jpg"><img data-src="img/procedures/img_16.jpg" class="lazy"></a>
+                      <div class="swiper-button-next">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img data-src="img/procedures__logo.png" class="procedures__logo lazy">
+              </div>
+              <div class="col-md-6">
+                <p class="procedures__text">Этот калейдоскоп захлестнул меня!</p>
+                <p class="procedures__text">И я понял одно — врачи Здравницы знают что делают.<span>Я почувствовал — с каждым днем <br/>мне становилось все легче.</span></p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="professional">
+          <div class="professional__decor lazy" data-bg="url(./img/decors/professional__decor.svg)"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-6 col-lg-7">
+                <h3 class="block__heading">Знаешь, <br/>что еще удивило?</h3>
+                <p class="professional__text">Я, как и многие другие, кто бывал в наших <br/>а-ля советских санаториях и поликлиниках привык, <br/>что лечебный массаж длится 15-30 минут, <br/>что ЛФК это общая группа со стандартным набором упражнений и что (да простят меня добросовестные медики) «не подмажешь, не поедешь».</p>
+                <p class="professional__text">НО… массажисты, медсестры, специалисты по кинезиотерапии просто выкладывались <span>на каждой процедуре</span> по полной программе и всегда давали именно то, что мне нужно. Я уж не говорю о том профессионализме с которым работают врачи, специалисты центра китайской <br/>медицины, остеопат.</p>
+              </div>
+              <div class="col-12">
+                <img data-src="img/professional__img.png" class="professional__img lazy-webp">
+              </div>
+              <div class="col-md-6">
+                <img data-src="img/decors/professional__numbers.svg" class="professional__numbers lazy">
+              </div>
+              <div class="col-md-6">
+                <b class="professional__text professional__text_wide">Я был поражен качеством лечения. <br/>В буквальном смысле это была «ручная работа».</b>
+                <p class="professional__text professional__text_wide">Уже намного позже, познакомившись с моей супругой, <br/>я понял, у них с самого начала был в хорошем смысле этого слова идеалистический подход в отборе и подготовке любого персонала, они провозгласили лозунг – <span>любовь, забота и понимание в работе с каждым гостем.</span></p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="meals">
+          <div class="meals__decor_left lazy" data-bg="url(./img/decors/meals__decor-left.svg)"></div>
+          <div class="meals__decor_right lazy" data-bg="url(./img/decors/meals__decor-right.svg)"></div>
+          <div class="container">
+            <div class="row align-items-end">
+              <div class="col-lg-6 order-1 order-lg-0">
+                <p class="block__desc">- Да, интересно рассказываешь, <br/>а что у них с питанием? Больничное?</p>
+                <b class="block__heading">Когда я ехал в здравницу я тоже ожидал <br/>увидеть еду, как в муниципальной больнице - пресное, не вкусное.</b>
+                <p class="meals__text">А по факту мне предоставляли <span>выбор каждый день</span>. Мой завтрак начинался с выбора меню на завтра. <br/>На выбор было по три основных блюда, плюс несколько особых — для тех, у кого диабет, заболевания ЖКТ, <br/>или тех, кто хочет помимо решения вопросов <br/>со спиной еще и скорректировать свой вес.</p>
+              </div>
+              <div class="col-lg-6 order-0 order-lg-1">
+                <img data-src="img/decors/meals__icon.svg" class="meals__icon lazy">
+              </div>
+              <div class="col-12 order-2">
+                <img data-src="img/meals__img.png" class="d-none d-md-block meals__img lazy-webp">
+                <img data-src="img/meals__img-mobile.jpg" class="d-block d-md-none meals__img lazy">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="menu">
+          <div class="menu__decor_left lazy" data-bg="url(./img/decors/menu__decor-1.svg)"></div>
+          <div class="menu__decor_right lazy" data-bg="url(./img/decors/menu__decor-2.svg)"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-10">
+                <p class="block__desc">— Конечно, вы там небось «ЗОЖники» все… Мяса не едите, алкоголь не принимаете…</p>
+                <b class="menu__heading">Мы с понимаем относимся ко всем гостям, хотя конечно и рекомендуем <br/>придерживаться ЗОЖ, но это на личное усмотрение каждого. <br/>Силком в «рай здоровья» не затащишь.</b>
+                <p class="menu__text">В меню есть как <span>вегетарианские и веганские</span> блюда, так и обычные. <br/>А если хочешь — на ужин всегда можно заказать себе вина — <br/>никаких «осуждающих» взглядов не будет.</p>
+                <p class="menu__text">А если захочешь <b>отдохнуть</b> душой вечером — на территории Здравницы <br/>есть кафе, где по вечерам живая музыка и можно не только пропустить стаканчик-другой, но и отведать настоящие Кубанские деликатесы.</p>
+              </div>
+              <div class="col-12">
+                <div class="menu__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="img/menu/img_1.jpg"><img data-src="img/menu/img_1.jpg" class="lazy"></a>
+                      <div class="swiper-button-next">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="img/menu/img_2.jpg"><img data-src="img/menu/img_2.jpg" class="lazy"></a>
+                      <div class="swiper-button-next">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="img/menu/img_3.jpg"><img data-src="img/menu/img_3.jpg" class="lazy"></a>
+                      <div class="swiper-button-next">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="img/menu/img_4.jpg"><img data-src="img/menu/img_4.jpg" class="lazy"></a>
+                      <div class="swiper-button-next">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="img/menu/img_5.jpg"><img data-src="img/menu/img_5.jpg" class="lazy"></a>
+                      <div class="swiper-button-next">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="img/menu/img_6.jpg"><img data-src="img/menu/img_6.jpg" class="lazy"></a>
+                      <div class="swiper-button-next">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="img/menu/img_7.jpg"><img data-src="img/menu/img_7.jpg" class="lazy"></a>
+                      <div class="swiper-button-next">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="img/menu/img_8.jpg"><img data-src="img/menu/img_8.jpg" class="lazy"></a>
+                      <div class="swiper-button-next">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="img/menu/img_9.jpg"><img data-src="img/menu/img_9.jpg" class="lazy"></a>
+                      <div class="swiper-button-next">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="img/icons/angle_left.svg">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="personal">
+          <div class="personal__decor"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h3 class="block__heading">Особого внимания заслуживает персонал Здравницы.</h3>
+                <p class="block__desc">— А что с ними? Напялили свою «дежурную улыбку», а на самом деле им все равно?</p>
+                <b class="personal__heading">Наоборот!</b>
+                <p class="personal__text"><span>Настоящая забота о госте</span> — первое, чему здесь учат свой персонал. Их действительно волнует твое самочувствие и состояние. Они в любой момент готовы прийти на помощь и решить любую твою проблему.</p>
+                <p class="personal__text">И я уже говорил о личном помощнике. Любые просьбы, вопросы по организации отдыха, заказать что-то, привезти из города - он с радостью выполнит. Работа у него такая — помогать. <span>Работа у него такая — помогать.</span></p>
+                <img data-src="img/personal__img.jpg" class="personal__image lazy">
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="guest-callback">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h3 class="block__heading">Забота о госте начинается <br/>еще до приезда в Здравницу.</h3>
+              <p class="guest-callback__text">Не веришь? Заполни форму и в течение дня тебе перезвонит наш эксперт, который не только поможет выбрать программу лечения и забронировать номер, <br/>но и продемонстрирует как мы относимся к гостям.</p>
+            </div>
+            <div class="col-lg-6">
+              <form action="#" method="post" onsubmit="return send_request(this, event)">
+                <div class="form-row">
+                  <b>Оставьте свои контактные данные, <br/>чтобы получить консультацию нашего врача</b>
+                  <input type="text" name="name" class="form-control input" placeholder="Имя" required>
+                  <input type="tel" name="phone" class="form-control input" placeholder="Телефон" required>
+                  <button type="submit" class="button"><p>Получить консультацию</p></button>
+                  <p class="note">Нажимая на кнопку "Получить консультацию", Вы даёте согласие на обработку своих персональных данных.</p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="twoweeks">
+        <div class="twoweeks__decor"></div>
+        <div class="twoweeks__decor_right lazy" data-bg="url(./img/decors/twoweeks__decor.svg)"></div>
+        <div class="container">
+          <div class="row justify-content-end align-items-end">
+            <div class="col-12">
+              <h3 class="block__heading">Именно так и прошли мои первые <br/>две недели в Здравнице.</h3>
+            </div>
+            <div class="col-12">
+              <p class="block__desc">— А почему «первые»? <br/>Ты что же, так долго лечился?</p>
+              <p class="twoweeks__text">Нет, лечился я в Здравнице ровно две недели. Забегая вперед — боль ко мне так и не вернулась, хотя конечно в плохую погоду травма позвоночника дает о себе знать, её так легко, как грыжи не уберешь, но я живу без боли и без операций на позвоночнике. В том числе и потому, что я теперь каждый день «поддерживаю форму». Врач <span>составил мне программу</span> профилактических упражнений, которые нужно выполнять дома. И ,конечно,  я теперь раз в год прохожу курс поддерживающей терапии – мы все не молодеем год от года и тело свое надо уважать, заботиться о нем. Но об этом я расскажу позже.</p>
+              <p class="twoweeks__text">Просто из Здравницы я так и не уехал. Приятно удивленный результатом лечения и атмосферой в Здравнице, я был позже просто очарован своей будущей супругой, её отношением к людям, к жизни, к своему делу, таких искренних и глубоких людей, верящих в свои идеалы и отдающих себя тому, во что верят, встретишь не часто. Я решил не отпускать её. <br/>Теперь Здравница стала и моим домом, и я не жалею, мне очень повезло не только с женой и нашей дочкой, <br/>но и с возможностью работать с интересными людьми, которые верят в свое дело.</p>
+              <p class="twoweeks__text d-none">В каком-то плане моя свободная в отношении графика работы профессия профессионального фотографа <br/>позволила мне совместить проживание в Здравнице со съемками красот Адыгеи – сказочный край для <br/>художника, и со своими деловыми поездками, но постепенно я втянулся в жизнь Здравницы, стал <br/>работать для Здравницы в качестве фотографа и видео-оператора, помогать им в организации <br/>фестивалей, в создании интерьеров и организации территории, и так незаметно для себя стал <br/>Арт-директором. Здравница как магнит притягивает к себе людей с творческой жилкой, <br/>которые хотят делать то, во что верят. Они делают дело, которым можно гордиться, <br/>это дорого стоит. И вот я рассказываю о своем опыте.</p>
+            </div>
+            <div class="col-12">
+              <img data-src="img/twoweeks__img.png" class="twoweeks__image lazy-webp">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="guest-comfort">
+        <div class="guest-comfort__decor"></div>
+        <div class="guest-comfort__decor_left lazy" data-bg="url(./img/decors/guest-comfort__decor-left.svg)"></div>
+        <div class="guest-comfort__decor_right lazy" data-bg="url(./img/decors/guest-comfort__decor-right.svg)"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-8 col-lg-9">
+              <h3 class="block__heading">Супруга, управляющий акционер Здравницы, всегда придерживалась позиции: Здравница должна не только лечить, но и обеспечивать комфорт и условия для развития личностных навыков всем гостям. И я решил, в чем смогу - помогу ей в этом.</h3>
+              <p class="block__desc">— И как же вы этого достигнете?</p>
+              <p class="guest-comfort__text">Предприятие, прямо скажем не большое, не огромный холдинг, но с самого начала все акционеры согласились, что  самое главное это качество и большая часть заработанных денег здесь всегда вкладывалась и вкладывается в развитие Здравницы: сначала сделали полную реконструкцию всех зданий на территории, обновили медицинское оборудование и постоянно его расширяют, построили несколько новых корпусов, постоянно облагораживают территорию, а ее аж 10 гектар, привлекают для знакомства гостей с разными новыми направления развития мастеров йоги, рейки, музыкантов, художников и психологов. <br/>И главное, что мне очень импонирует, они все время учатся, и управляющее звено, и линейный персонал. Никогда еще не видел, чтобы в повышение профессионализма всех сотрудников вкладывали столько усилий и времени.</p>
+            </div>
+            <div class="col-12">
+              <div class="guest-comfort__slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="img/guest-comfort/img_1.jpg"><img data-src="img/guest-comfort/img_1.jpg" class="lazy"></a>
+                    <div class="swiper-button-next"><img src="img/icons/angle_left.svg"></div>
+                    <div class="swiper-button-prev"><img src="img/icons/angle_left.svg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="img/guest-comfort/img_2.jpg"><img data-src="img/guest-comfort/img_2.jpg" class="lazy"></a>
+                    <div class="swiper-button-next"><img src="img/icons/angle_left.svg"></div>
+                    <div class="swiper-button-prev"><img src="img/icons/angle_left.svg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="img/guest-comfort/img_3.jpg"><img data-src="img/guest-comfort/img_3.jpg" class="lazy"></a>
+                    <div class="swiper-button-next"><img src="img/icons/angle_left.svg"></div>
+                    <div class="swiper-button-prev"><img src="img/icons/angle_left.svg"></div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="price">
+        <div class="price__decor"></div>
+        <div class="price__decor_left lazy" data-bg="url(./img/decors/price__decor-left.svg)"></div>
+        <div class="price__decor_right lazy" data-bg="url(./img/decors/price__decor-right.svg)"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 order-0">
+              <p class="block__desc">— Ну конечно! Теперь небось берете <br/>за это дело «в три дорого», мне такое не по карману…</p>
+            </div>
+            <div class="col-lg-6 order-2 order-lg-1">
+              <img data-src="img/price__img.jpg" class="price__image lazy">
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2">
+              <b class="block__heading">Нет, мы «держим» <br/>нормальный уровень цен.</b>
+              <p class="price__text">Наши цены — ровно такие, чтобы Здравница стабильно развивалась и могла обеспечивать максимальный уровень комфорта и медицинских услуг для всех наших гостей.</p>
+              <p class="price__text">«Путевка» на <span>две недели</span> со включенным в нее проживанием, питанием и всеми необходимыми медицинскими процедурами стоит примерно <br/>110 000 рублей на одного человека.</p>
+              <p class="price__text"><b>Это меньше</b>, чем ты отдашь «мануальщикам» <br/>в своем городе и потратишь на медикаменты за пол года.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="school">
+        <div class="school__decor"></div>
+        <div class="school__decor_left lazy" data-bg="url(./img/decors/school__decor-left.svg)"></div>
+        <div class="school__decor_right lazy" data-bg="url(./img/decors/school__decor-right.svg)"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="block__desc">— Слушай, а раз вы так быстро развиваетесь<br/>— небось набираете кого попало «по объявлению»?</p>
+              <h3 class="block__heading">Нет, у нас есть свои «школы».</h3>
+            </div>
+            <div class="col-md-6">
+              <p class="school__text">На территории Здравницы расположена Школа массажистов, в которой вест наш медицинский учится минимум пол-года, прежде чем мы вообще разрешаем им подходить к гостям. И да, в этой школе обучаются не только наши сотрудники. <br/><span>К нам едут учиться со Всей России.</span></p>
+            </div>
+            <div class="col-md-6">
+              <p class="school__text school__text_right">Так же у нас есть Центр Традиционной Китайской Медицины, которой заведует врач, много лет обучавшийся в Китае и Тибете. Китайская медицина подходит к лечению человека не фрагментарно, <br/><span>а целостно.</span> Именно этот подход мы исповедуем в лечении наших гостей, но об этом я расскажу тебе позже.</p>
+            </div>
+            <div class="col-12">
+              <div class="school__slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="img/school/img_1.jpg"><img data-src="img/school/img_1.jpg" class="lazy"></a>
+                    <div class="swiper-button-next"><img src="img/icons/angle_left.svg"></div>
+                    <div class="swiper-button-prev"><img src="img/icons/angle_left.svg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="img/school/img_2.jpg"><img data-src="img/school/img_2.jpg" class="lazy"></a>
+                    <div class="swiper-button-next"><img src="img/icons/angle_left.svg"></div>
+                    <div class="swiper-button-prev"><img src="img/icons/angle_left.svg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="img/school/img_3.jpg"><img data-src="img/school/img_3.jpg" class="lazy"></a>
+                    <div class="swiper-button-next"><img src="img/icons/angle_left.svg"></div>
+                    <div class="swiper-button-prev"><img src="img/icons/angle_left.svg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="img/school/img_5.jpg"><img data-src="img/school/img_5.jpg" class="lazy"></a>
+                    <div class="swiper-button-next"><img src="img/icons/angle_left.svg"></div>
+                    <div class="swiper-button-prev"><img src="img/icons/angle_left.svg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="img/school/img_4.jpg"><img data-src="img/school/img_4.jpg" class="lazy"></a>
+                    <div class="swiper-button-next"><img src="img/icons/angle_left.svg"></div>
+                    <div class="swiper-button-prev"><img src="img/icons/angle_left.svg"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="nuance">
+        <div class="nuance__decor"></div>
+        <div class="nuance__decor_left lazy" data-bg="url(./img/decors/nuance__decor-left.svg)"></div>
+        <div class="nuance__decor_right lazy" data-bg="url(./img/decors/nuance__decor-right.svg)"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <b class="block__heading">И да, некоторые наши процедуры и методики <br/>ты сможешь получить и у себя дома. <br/>Но есть один нюанс…</b>
+              <p class="block__desc">— Всегда есть нюансы. <br/>Какой же в этот раз?</p>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block">
+              <img data-src="img/decors/nuance__texts.svg" class="nuance__texts lazy">
+              <img data-src="img/decors/nuance__clock.png" class="nuance__clock lazy">
+            </div>
+            <div class="col-md-6">
+              <p class="nuance__text">На территории Здравницы Лаго-Наки собрано <br/><span>все в комплексе.</span> И это наше главное преимущество. <br/>У нас процедуры идут в самом правильном порядке одна за одной. И работает это все именно в комплексе <br/>с особым микроклиматом, психотерапией <span>и правильным питанием.</span></p>
+              <p class="nuance__text">Вот сможешь ты в городе пройти в нужном графике, с правильными перерывами между процедурами, с релаксом, да еще на лоне природы без суеты комплексное лечение?</p>
+            </div>
+            <div class="col-md-6">
+              <p class="nuance__text">Нет. В городе все эти специалисты разбросаны по разным районам, придется ехать не один час… Да и сам знаешь, на своем горьком опыте, что в разных клиниках у врачей будет разное мнение и разные назначения, в итоге, процедуры будут не дополнять а соперничать друг с другом. Но в Здравнице — ты получишь все процедуры комплексно, по правильной методологии, с учетом всех твоих заболеваний, да еще строго по нужному твоему организму графику.</p>
+            </div>
+            <div class="col-12">
+              <img data-src="img/nuance__img.jpg" class="nuance__image lazy">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="location">
+        <div class="location__decor"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-8 col-lg-10 order-0">
+              <h3 class="block__heading">Расположение Здравницы <br/>— отдельная история.</h3>
+            </div>
+            <div class="col-xl-8 col-lg-10 order-2 order-lg-1">
+              <p class="block__desc">Это поистине уникальное место — предгорье Кавказа.</p>
+              <div class="location__block">
+                <p class="location__text">Здравница расположена достаточно близко к морю и горам, чтобы съездить туда на один-два дня, но в то же время достаточно далеко от них, чтобы не испытывать их экстремальное влияние на микроклимат и страдать от жары или ветра.</p>
+                <p class="location__text"><span>Жители средней полосы России не будут <br/>испытывать проблем с акклиматизацией.</span></p>
+                <p class="location__text">В 80 километрах от Здравницы находится Кавказский Биосферный Заповедник с настоящими зубрами и другими уникальными для этой местности животными. И да, туда <b>можно съездить на экскурсию.</b></p>
+              </div>
+            </div>
+            <div class="col-12 order-1 order-lg-2">
+              <img data-src="img/location__img-mobile.png" class="d-block d-lg-none location__image lazy-webp">
+              <img data-src="img/location__img.png" class="d-none d-lg-block location__image lazy-webp">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="hypertony">
+        <div class="hypertony__decor"></div>
+        <div class="hypertony__decor_left lazy" data-bg="url(./img/decors/hypertony__decor-left.svg)"></div>
+        <div class="hypertony__decor_center lazy" data-bg="url(./img/decors/hypertony__bg.png)"></div>
+        <div class="hypertony__decor_right lazy" data-bg="url(./img/decors/hypertony__decor-right.svg)"></div>
+        <div class="container">
+          <div class="row align-items-end">
+            <div class="col-12">
+              <p class="block__desc">— Ты рассказал классную историю, <br/>я уже очень хочу попасть к вам. Вот только <br/>у меня Гипертония! Практически все процедуры <br/>мне проводить просто нельзя…</p>
+              <h3 class="block__heading">А вот это как раз не проблема.</h3>
+            </div>
+            <div class="col-lg-6">
+              <p class="hypertony__text">Наши врачи и специалисты умеют правильно расставлять акценты в лечении и учитывать все сопутствующие заболевания и то, как они влияют на позвоночник.</p>
+              <p class="hypertony__text">Есть разные механизмы, которые вызывают боль <br/>и дискомфортные ощущения, это может быть связано <br/>с отеком, напряжением мышц, дистрофическим изменением тканей, наличием грыж и другими факторами.</p>
+              <p class="hypertony__text hypertony__text_note"><b>Задача —</b> скоординировать процедуры так, чтобы все эти факторы, провоцирующие боль, учитывались. Если при этом у гостя есть гипертония, заболевания почек, диабет, заболевания печени и другие сопутствующие заболевания, то врач выстраивает <br/>эту программу, <span>учитывая особенности</span> состояния таких гостей.</p>
+            </div>
+            <div class="col-lg-6">
+              <img data-src="img/hypertony__img.png" class="hypertony__image lazy-webp">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reduce-pressure">
+        <div class="reduce-pressure__decor"></div>
+        <div class="reduce-pressure__decor_center lazy" data-bg="url(./img/decors/reduce-pressure__bg.png)"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="block__heading">Для людей с повышенным артериальным давлением <br/>у нас есть особая программа, его снижающая.</h3>
+              <div class="reduce-pressure__heading">
+                <p class="block__desc">— А вот это что-то новое, рассказывай.</p>
+                <img data-src="img/decors/reduce-pressure__img.svg" class="lazy">
+              </div>
+              <p class="reduce-pressure__text">Наши врачи исповедуют принцип, что у людей с разными заболеваниями по разному протекает формирование дегенеративно – дистрофических изменений в позвоночнике, так сказать задействованы разные механизмы как развития болезни, так и защиты или самоисцеления. Ну и само собой разумеется, что лечить гипертоника или диабетика надо не так, как пациента с заболеваниями системы пищеварения или с хроническим бронхитом, даже если  у всех будут похожие жалобы на боли в спине, или у всех будут протрузии. Потому таких программ как у нас нет нигде больше.</p>
+              <p class="reduce-pressure__text">Ну и конечно, сам метод отпуска процедур, так сказать методология, очень важны, вот например, тем же гипертоникам многие процедуры повышают давление, наши врачи разработали иную методологию отпуска и процедур и последовательность процедур, что позволяет им не только с успехом избавлять пациентов от самой причины появления боли, но и нормализовать артериальное давление.</p>
+              <p class="reduce-pressure__text">Помимо того, в лечении учитывается, что у гипертоников из-за изменений в сосудах значительно ухудшается кровообращение, в том числе в районе позвоночника, и это ускоряет процесс дегенеративных изменений в межпозвонковых дисках и суставах. Добавляются специальные процедуры улучшающие состояние сосудов, свойства крови и микроциркуляцию.</p>
+              <p class="reduce-pressure__text"><b>Получаем в итоге результат не на 60%, а на 100%.</b></p>
+              <div class="reduce-pressure__slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="img/reduce-pressure/img_1.jpg"><img data-src="img/reduce-pressure/img_1.jpg" class="lazy"></a>
+                    <div class="swiper-button-next"><img src="img/icons/angle_left.svg"></div>
+                    <div class="swiper-button-prev"><img src="img/icons/angle_left.svg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="img/reduce-pressure/img_3.jpg"><img data-src="img/reduce-pressure/img_3.jpg" class="lazy"></a>
+                    <div class="swiper-button-next"><img src="img/icons/angle_left.svg"></div>
+                    <div class="swiper-button-prev"><img src="img/icons/angle_left.svg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="img/reduce-pressure/img_4.jpg"><img data-src="img/reduce-pressure/img_4.jpg" class="lazy"></a>
+                    <div class="swiper-button-next"><img src="img/icons/angle_left.svg"></div>
+                    <div class="swiper-button-prev"><img src="img/icons/angle_left.svg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="img/reduce-pressure/img_5.jpg"><img data-src="img/reduce-pressure/img_5.jpg" class="lazy"></a>
+                    <div class="swiper-button-next"><img src="img/icons/angle_left.svg"></div>
+                    <div class="swiper-button-prev"><img src="img/icons/angle_left.svg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="img/reduce-pressure/img_6.jpg"><img data-src="img/reduce-pressure/img_6.jpg" class="lazy"></a>
+                    <div class="swiper-button-next"><img src="img/icons/angle_left.svg"></div>
+                    <div class="swiper-button-prev"><img src="img/icons/angle_left.svg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="img/reduce-pressure/img_7.jpg"><img data-src="img/reduce-pressure/img_7.jpg" class="lazy"></a>
+                    <div class="swiper-button-next"><img src="img/icons/angle_left.svg"></div>
+                    <div class="swiper-button-prev"><img src="img/icons/angle_left.svg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="img/reduce-pressure/img_8.jpg"><img data-src="img/reduce-pressure/img_8.jpg" class="lazy"></a>
+                    <div class="swiper-button-next"><img src="img/icons/angle_left.svg"></div>
+                    <div class="swiper-button-prev"><img src="img/icons/angle_left.svg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="img/reduce-pressure/img_9.jpg"><img data-src="img/reduce-pressure/img_9.jpg" class="lazy"></a>
+                    <div class="swiper-button-next"><img src="img/icons/angle_left.svg"></div>
+                    <div class="swiper-button-prev"><img src="img/icons/angle_left.svg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="img/reduce-pressure/img_10.jpg"><img data-src="img/reduce-pressure/img_10.jpg" class="lazy"></a>
+                    <div class="swiper-button-next"><img src="img/icons/angle_left.svg"></div>
+                    <div class="swiper-button-prev"><img src="img/icons/angle_left.svg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="img/reduce-pressure/img_11.jpg"><img data-src="img/reduce-pressure/img_11.jpg" class="lazy"></a>
+                    <div class="swiper-button-next"><img src="img/icons/angle_left.svg"></div>
+                    <div class="swiper-button-prev"><img src="img/icons/angle_left.svg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="img/reduce-pressure/img_12.jpg"><img data-src="img/reduce-pressure/img_12.jpg" class="lazy"></a>
+                    <div class="swiper-button-next"><img src="img/icons/angle_left.svg"></div>
+                    <div class="swiper-button-prev"><img src="img/icons/angle_left.svg"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="diabet">
+        <div class="diabet__decor"></div>
+        <div class="diabet__decor_left lazy" data-bg="url(./img/decors/diabet__decor-left.svg)"></div>
+        <div class="diabet__decor_center lazy" data-bg="url(./img/decors/diabet__bg.png)"></div>
+        <div class="diabet__decor_right lazy" data-bg="url(./img/decors/diabet__decor-right.svg)"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 order-1 order-lg-0">
+              <img data-src="img/diabet__img.png" class="diabet__image lazy-webp">
+            </div>
+            <div class="col-lg-6 order-0 order-lg-1">
+              <h3 class="block__heading">То же и с диабетом</h3>
+              <p class="diabet__text">У гостей больных диабетом умирают нервные окончания и капилляры. Соответственно и лечение для них <b>строится иначе.</b></p>
+              <p class="diabet__text">Мы решаем вопрос в комплексе. Не только питанием, но и процедурами снимаем все противопоказания к лечению позвоночника, <br/>а так же <span>облегчаем последствия диабета.</span></p>
+              <hr>
+            </div>
+          </div>
+        </div>
+        <section class="stress">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-10">
+                <p class="block__desc">— А что делать, если я постоянно живу <br/>в стрессе из-за работы и бизнеса?</p>
+                <div class="diabet__subheading">
+                  <h3 class="block__heading">Расслабляться в нашей <br/>Здравнице, конечно же.</h3>
+                  <img data-src="img/decors/smile.svg" class="lazy">
+                </div>
+                <p class="diabet__text diabet__text_wide">Врачи и специалисты по кинезиотерапии всегда отмечают, что у людей с высокими стрессовыми нагрузками, которые не умеют расслабляться, наблюдаются чрезмерное напряжение мышц и спазмы сосудов, это как один из видов психосоматических реакций. И пока врач не поможет пациенту избавиться от негативных последствий стресса и не повысит его устойчивость к стрессовым факторам, лечить позвоночник практически бесполезно. Именно потому для таких людей есть отдельная программа и возможность занятий с психологом или психотерапевтом.</p>
+              </div>
+              <div class="col-12">
+                <div class="diabet__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="img/diabet/img_1.jpg"><img data-src="img/diabet/img_1.jpg" class="lazy"></a>
+                      <div class="swiper-button-next"><img src="img/icons/angle_left.svg"></div>
+                      <div class="swiper-button-prev"><img src="img/icons/angle_left.svg"></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="img/diabet/img_2.jpg"><img data-src="img/diabet/img_2.jpg" class="lazy"></a>
+                      <div class="swiper-button-next"><img src="img/icons/angle_left.svg"></div>
+                      <div class="swiper-button-prev"><img src="img/icons/angle_left.svg"></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="img/diabet/img_3.jpg"><img data-src="img/diabet/img_3.jpg" class="lazy"></a>
+                      <div class="swiper-button-next"><img src="img/icons/angle_left.svg"></div>
+                      <div class="swiper-button-prev"><img src="img/icons/angle_left.svg"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="brain">
+        <div class="brain__decor"></div>
+        <div class="brain__decor_left lazy" data-bg="url(./img/decors/brain__decor-left.svg)"></div>
+        <div class="brain__decor_right lazy-webp" data-bg="url(./img/decors/brain__decor-right.png)"></div>
+        <div class="brain__decor_right-shape lazy" data-bg="url(./img/decors/brain__decor-right-shape.svg)"></div>
+        <div class="brain__content">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 order-1 order-lg-0">
+                <div class="brain__block">
+                  <div class="brain__circle"></div>
+                  <img data-src="img/brain__img.png?v=2" class="brain__image lazy-webp">
+                </div>
+              </div>
+              <div class="col-lg-6 order-0 order-lg-1">
+                <img data-src="img/decors/brain.svg" class="brain__sketch lazy">
+                <h3 class="block__heading">Так же у нас отдельная программа лечения для людей с заболеваниями сосудов мозга.</h3>
+                <p class="brain__text">Бывают ситуации, когда приходится лечить позвоночник у людей с проблемами мозгового кровообращения, нарушениями памяти и внимания.</p>
+                <p class="brain__text">Это другая история, здесь работают не только специальные процедуры, но рекомендуются в дополнение тренинги на развитие памяти и внимания, которые проводят в нашем санатории психологи.</p>
+                <hr>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-9">
+              <h3 class="block__heading">Мы постоянно дорабатываем <br/>наши программы лечения.</h3>
+            </div>
+            <div class="col-xl-6 col-lg-8 col-md-10">
+              <p class="brain__text">Каждые полгода все программы Здравницы обновляются, добавляются новые методики или процедуры, что позволяет Здравнице опережать коллег и всегда оставаться на шаг впереди.</p>
+              <p class="brain__text">Мы можем менять состав программы, методику оказания процедур или вводить новые. Но сама идея индивидуальной работы с разными заболеваниями всегда остается.</p>
+            </div>
+          </div>
+        </div>
+        <section class="microclimate">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-8 col-lg-9">
+                <h3 class="block__heading">Помнишь я говорил про <br/>особый микроклимат?</h3>
+                <p class="block__desc">— Да, расскажи по подробнее...</p>
+                <div class="microclimate__block">
+                  <b class="microclimate__text">Здравница находится в излучине реки <span>Курджипс.</span></b>
+                  <p class="microclimate__text">Это практически полуостров. Въезд только один, а с трех сторон она окружена водой. Вся территория в деревьях, многим из них более 100 лет. Когда в пятидесятых там только «закладывали» санаторий — советские врачи пригласили биологов, которые исследовали состав лесных насаждений.</p>
+                  <p class="microclimate__text">Деревья, которые не отвечали задачам Здравницы были удалены, а те, которых не хватало — добавлены. «Особые» деревья и река — являются основой нашего микроклимата, благотворно влияющего на организм и <span>ускоряющего выздоровление.</span></p>
+                </div>
+              </div>
+              <div class="col-12 d-block d-sm-none">
+                <img data-src="img/decors/brain__decor-right.png" class="brain__decor_bottom lazy-webp">
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="entertainment">
+        <div class="entertainment__decor"></div>
+        <div class="entertainment__clouds lazy-webp" data-bg="url(./img/decors/clouds.png)"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-8 col-lg-10">
+              <p class="block__desc">— Это все здорово конечно, <br/>но что там делать помимо лечения?</p>
+              <h3 class="block__heading">Просто поверь, <br/>скучать тебе не придется.</h3>
+              <div class="entertainment__block">
+                <p class="entertainment__text"><b>Каждую неделю</b> у нас проводятся <b>экскурсии</b> в горы и на природу. Азишская пещера, горные хребты, альпийские луга, горные озера и реки… А если это не вдохновляет — твой личный помощник организует тебе любую экскурсию, какая вообще может быть доступна в Краснодарском крае.</p>
+                <p class="entertainment__text">Практически каждый день наши врачи и приглашенные эксперты проводят занятия по теме «Как научиться жить без боли в спине». Там ты научишься секретам поддержания здоровья и даже  отработаешь на практике правильные упражнения для поддержания своего позвоночника в здоровом состоянии.</p>
+                <p class="entertainment__text">Для любознательных организованы занятия по йоге, цигун, по проведению чайной церемонии, по изготовлению варенья, валянию и другие мастер классы. Если правильно подгадать время, то можно попасть на неделю с мастером, когда для гостей Здравницы проводятся бесплатно различные лекции и практические занятия с мастерами восточных практик, с музыкантами, психологами и т.д.</p>
+                <p class="entertainment__text">К нам приезжают за здоровым позвоночником, но и за новыми знаниями тоже, такова традиция Здравницы «Лаго–Наки»</p>
+                <p class="entertainment__text">Ну и конечно во всех корпусах и почти везде на территории есть <b>wi-fi</b>. Ты им обязательно воспользуешься, если конечно останется свободное время.</p>
+              </div>
+            </div>
+            <div class="col-12">
+              <img data-src="img/entertainment__bg.png" class="entertainment__bg lazy-webp">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="children">
+        <div class="children__decor"></div>
+        <div class="children__decor_center lazy" data-bg="url(./img/decors/children__decor-center.svg)"></div>
+        <div class="children__decor_right lazy" data-bg="url(./img/decors/children__decor-right.svg)"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-11 order-0">
+              <p class="block__desc">— Допустим я «выделю» две недели и отправлю <br/>себя в «отпуск». Но чем я займу своих детей?</p>
+            </div>
+            <div class="col-xl-7 col-lg-8 order-1">
+              <h3 class="block__heading">Бери их с собой!</h3>
+            </div>
+            <div class="col-xl-7 col-lg-8 order-3 order-lg-2">
+              <p class="children__text">Помимо специальных детских процедур с твоими детьми будут заниматься в детской комнате, а если твои дети посещают центры Монтессори, то они смогут не отрываться от методики и в Здравнице, где с 2018 года действуют 2 класса для возрастов 1-3 и 3-6. На территории Здравницы есть детские площадки, детский бассейн, а так же есть конюшня с очень добрыми лошадьми.</p>
+              <p class="children__text">Кстати, домашние питомцы тоже могут приезжать. Мы очень любим животных, у нас самих живут кошка и собака, и мы совершенно не против, если гости приезжают вместе со своими любимцами, главное не брать их с собой на процедуры. Тем более мы точно знаем, что общение с братьями нашими меньшими способствует выздоровлению.</p>
+            </div>
+            <div class="col-12 order-2 order-lg-3">
+              <div class="children__slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="img/children/img_1.jpg"><img data-src="img/children/img_1.jpg" class="lazy"></a>
+                    <div class="swiper-button-next"><img src="img/icons/angle_left.svg"></div>
+                    <div class="swiper-button-prev"><img src="img/icons/angle_left.svg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="img/children/img_2.jpg"><img data-src="img/children/img_2.jpg" class="lazy"></a>
+                    <div class="swiper-button-next"><img src="img/icons/angle_left.svg"></div>
+                    <div class="swiper-button-prev"><img src="img/icons/angle_left.svg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="img/children/img_3.jpg"><img data-src="img/children/img_3.jpg" class="lazy"></a>
+                    <div class="swiper-button-next"><img src="img/icons/angle_left.svg"></div>
+                    <div class="swiper-button-prev"><img src="img/icons/angle_left.svg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="img/children/img_4.jpg"><img data-src="img/children/img_4.jpg" class="lazy"></a>
+                    <div class="swiper-button-next"><img src="img/icons/angle_left.svg"></div>
+                    <div class="swiper-button-prev"><img src="img/icons/angle_left.svg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="img/children/img_5.jpg"><img data-src="img/children/img_5.jpg" class="lazy"></a>
+                    <div class="swiper-button-next"><img src="img/icons/angle_left.svg"></div>
+                    <div class="swiper-button-prev"><img src="img/icons/angle_left.svg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="img/children/img_6.jpg"><img data-src="img/children/img_6.jpg" class="lazy"></a>
+                    <div class="swiper-button-next"><img src="img/icons/angle_left.svg"></div>
+                    <div class="swiper-button-prev"><img src="img/icons/angle_left.svg"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="escort">
+          <div class="escort__decor_left lazy" data-bg="url(./img/decors/escort__decor-left.svg)"></div>
+          <div class="escort__decor_right lazy" data-bg="url(./img/decors/escort__decor-right.svg)"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <p class="block__desc">— Вообще то у меня спина болит! Как я к вам поеду? <br/>Это же в горах! Я по дороге остатки здоровья растеряю!</p>
+                <h3 class="block__heading">Не переживай. <br/>Мы в предгорье, а не в горах.</h3>
+              </div>
+              <div class="col-xl-7 col-lg-8">
+                <p class="escort__text">Тебя встретят в аэропорту или на вокзале Краснодара и сопроводят до твоего номера в Здравнице. Да, на машине или микроавтобусе. Да, водитель поедет не спеша по ровной и живописной дороге и с багажом поможет.</p>
+                <p class="escort__text">Твое здоровье, видимо, слега растерянное ранее, после пребывания у нас — значительно улучшится.</p>
+                <p class="escort__text">А так же из твоего окна будет открываться <br/><span>прекрасный вид на вершины Кавказа.</span></p>
+              </div>
+              <div class="col-12">
+                <div class="escort__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="gallery">
+                        <div class="top">
+                          <a href="img/escort/img_1.jpg"><img data-src="img/escort/img_1.jpg" class="lazy"></a>
+                        </div>
+                        <div class="bottom">
+                          <a href="img/escort/img_2.jpg"><img data-src="img/escort/img_2.jpg" class="lazy"></a>
+                          <a href="img/escort/img_3.jpg"><img data-src="img/escort/img_3.jpg" class="lazy"></a>
+                          <a href="img/escort/img_4.jpg"><img data-src="img/escort/img_4.jpg" class="lazy"></a>
+                          <a href="img/escort/img_5.jpg"><img data-src="img/escort/img_5.jpg" class="lazy"></a>
+                          <a href="img/escort/img_6.jpg"><img data-src="img/escort/img_6.jpg" class="lazy"></a>
+                        </div>
+                      </div>
+                      <div class="swiper-button-next"><img src="img/icons/angle_left.svg"></div>
+                      <div class="swiper-button-prev"><img src="img/icons/angle_left.svg"></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="img/escort/img_7.jpg"><img data-src="img/escort/img_7.jpg" class="lazy"></a>
+                      <div class="swiper-button-next"><img src="img/icons/angle_left.svg"></div>
+                      <div class="swiper-button-prev"><img src="img/icons/angle_left.svg"></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="img/escort/img_8.jpg"><img data-src="img/escort/img_8.jpg" class="lazy"></a>
+                      <div class="swiper-button-next"><img src="img/icons/angle_left.svg"></div>
+                      <div class="swiper-button-prev"><img src="img/icons/angle_left.svg"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="tale">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-10">
+                <p class="block__desc">— Ты прям мне сказку какую-то нарисовал! <br/>Не бывает у нас в стране таких мест…</p>
+                <h3 class="block__heading">Место такое есть. И это Здравница «Лаго – Наки».</h3>
+                <h4 class="block__heading block__heading_small">А вот чего точно не бывает — так это, того, чтоб гость уехал от нас без позитивного результата.</h4>
+                <p class="tale__text">Именно комбинация из <span>искренней заботы и правильного лечения</span> обеспечивает наш успех и практически круглогодичную загрузку номеров.</p>
+                <p class="tale__text">По этому если ты хочешь, чтобы во время твоего отпуска <br/>один из наших номеров точно был за тобой, и все необходимые тебе специалисты и процедуры были в твоей программе — <br/><b>забронируй заранее.</b></b></p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <footer class="footer lazy-webp" data-bg="url(./img/footer__bg.png)">
+        <div class="container">
+          <div class="row align-items-end">
+            <div class="col-lg-6 col-md-8">
+              <div class="footer__form">
+                <img data-src="img/procedures__logo.png" class="lazy">
+                <p class="footer__form-heading"><b>Оставь свои контактные данные,</b>наш эксперт перезвонит в течение дня <br/>и поможет выбрать номер и правильную программу лечения.</p>
+                <form action="#" method="post" onsubmit="return send_request(this, event)">
+                  <div class="form-row">
+                    <input type="text" name="name" class="form-control input" placeholder="Имя" required>
+                    <input type="tel" name="phone" class="form-control input" placeholder="Телефон" required>
+                    <button type="submit" class="button"><p>Получить консультацию</p></button>
+                    <p class="note">Нажимая на кнопку "Получить консультацию", Вы даёте согласие на обработку своих персональных данных.</p>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-4">
+              <a href="https://varga-da.com" class="footer__creator">
+                <img data-src="img/creator__logo.png" alt="Давид Варга" class="lazy">
+                <p>Создание сайта <br />и рекламной кампании</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div id="callback" class="mfp-popup mfp-hide">
+      <p class="footer__form-heading"><b>Оставь свои контактные данные,</b>наш эксперт перезвонит в течение дня <br/>и поможет выбрать номер и правильную программу лечения.</p>
+      <form action="#" method="post" onsubmit="return send_request(this, event)">
+        <div class="form-row">
+          <input type="text" name="name" class="form-control input" placeholder="Имя" required>
+          <input type="tel" name="phone" class="form-control input" placeholder="Телефон" required>
+          <button type="submit" class="button"><p>Получить консультацию</p></button>
+          <p class="note">Нажимая на кнопку "Получить консультацию", Вы даёте согласие на обработку своих персональных данных.</p>
+        </div>
+      </form>
+    </div>
+    <div id="thankyou" class="mfp-popup mfp-hide">
+      <b class="mfp-popup__heading">Спасибо! Мы вам перезвоним в течение дня</b>
+    </div>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    function send_request(form, event) {
+      event.preventDefault();
+      event.stopPropagation();
+      $.ajax({
+        url: '/request.php',
+        type: "POST",
+        data: $(form).serialize()
+      });
+      openModal('#thankyou', event);
+      return false;
+    };
+  </script>
+  </body>
+</html>
