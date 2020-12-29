@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <title>Мероприятия - Давид Варга</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="academy-nav navbar-expand-lg">
+        <div class="logo">
+          <img src="img/header__logo.png">
+          <b>Академия</b>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <ul class="list d-none d-lg-flex">
+          <li><a href="#" class="active"><b class="icon">ТСБ</b><p>Технология сетевого бизнеса</p></a></li>
+          <li><a href="#"><b class="icon">ПТА</b><p>Продвинутая технология Amway</p></a></li>
+          <li><a href="#"><b class="icon">ПТА</b><p>Продвинутая технология Amway</p></a></li>
+        </ul>
+        <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+          <ul class="list d-flex d-lg-none">
+            <li><a href="#" class="active"><p>Интернет-Маркетинг</p></a></li>
+            <li><a href="#"><p>Сетевой бизнес</p></a></li>
+            <li><a href="#"><p>Панель наставника</p></a></li>
+            <li><a href="#"><p>Библиотека</p></a></li>
+          </ul>
+          <div class="account d-flex d-lg-none">
+            <div class="user">
+              <img src="http://placeimg.com/480/480/any">
+              <p>Давид Варга</p>
+            </div>
+            <a href="#"><img src="img/icons/academy/exit-arrow.svg">Выход</a>
+          </div>
+        </div>
+      </nav>
+      <aside class="academy-main">
+        <div class="container-fluid">
+          <nav class="academy-main__nav">
+            <ul class="list d-none d-lg-flex">
+              <li><a href="#" class="active"><p>Интернет-Маркетинг</p></a></li>
+              <li><a href="#"><p>Сетевой бизнес</p></a></li>
+              <li><a href="#"><p>Панель наставника</p></a></li>
+              <li><a href="#"><p>Библиотека</p></a></li>
+            </ul>
+            <div class="dropdown d-flex d-lg-none">
+              <a class="button dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Технология сетевого бизнеса</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Продвинутая технология Amway</a>
+                <a class="dropdown-item" href="#">Продвинутая технология Amway</a>
+                <a class="dropdown-item" href="#">Продвинутая технология Amway</a>
+              </div>
+            </div>
+            <div class="account d-none d-lg-flex">
+              <div class="user">
+                <img src="http://placeimg.com/480/480/any">
+                <p>Давид Варга</p>
+              </div>
+              <a href="#"><img src="img/icons/academy/exit-arrow.svg">Выход</a>
+            </div>
+          </nav>
+        </div>
+        <div class="container-fluid academy-main__container">
+            <section class="course-program">
+              <div class="row">
+                <div class="col-12">
+                  <h3 class="block-heading block-heading_simple">Люди которых ты пригласил</h3>
+                  <div class="table-responsive-md">
+                    <table class="table table-partners">
+                      <thead>
+                        <tr>
+                          <th>Партнер</th>
+                          <th>Статус</th>
+                          <th>Текущий курс и урок</th>
+                          <th>Проверка Д/З</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="refer_1">
+                          <td class="partner main-partner">
+                            <div class="d-flex align-items-center">
+                              <a href="#" class="arrow-down" onclick="return show_partners(1,this,1,'');">+</a>
+                              <img src="http://placeimg.com/256/256/people" class="rounded-circle">
+                              <div>
+                                <a href="https://vk.com/id{{$user['vk_id']}}" target="_blank">Наталья Худикова</a>
+                                <br />+79280369966
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <span style="color:orange;font-weight:bold;">Зарегистрирован</span>
+                            <br />ID: 4311140
+                          </td>
+                          <td>
+                            Курс: <b>Технология Бизнеса Amway</b>, пройден на <b>8</b>%<br />
+                            Урок:
+                            <b>#1.6</b> Для Физ.лиц - Получаем VIP-статус
+                          </td>
+                          <td>
+                            <a href="/{{$locale}}/mentor/partners/amway/can-homeworks-review/{{$user['id']}}" class="btn-success btn">Разрешить</a>
+                          </td>
+                        </tr>
+                        <tr class="refer_1 referal_from_1 referal">
+                          <td colspan="4">
+                            <table class="table table-partners">
+                              <tbody>
+                                <tr class="refer_1-1">
+                                  <td class="partner main-partner">
+                                    <div class="d-flex align-items-center">
+                                      <a href="#" class="arrow-down" onclick="return show_partners(1,this,1,'');">+</a>
+                                      <img src="http://placeimg.com/256/256/people" class="rounded-circle">
+                                      <div>
+                                        <a href="https://vk.com/id{{$user['vk_id']}}" target="_blank">Наталья Худикова</a>
+                                        <br />+79280369966
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <span style="color:orange;font-weight:bold;">Зарегистрирован</span>
+                                    <br />ID: 4311140
+                                  </td>
+                                  <td>
+                                    Курс: <b>Технология Бизнеса Amway</b>, пройден на <b>8</b>%<br />
+                                    Урок:
+                                    <b>#1.6</b> Для Физ.лиц - Получаем VIP-статус
+                                  </td>
+                                  <td>
+                                    <a href="/{{$locale}}/mentor/partners/amway/can-homeworks-review/{{$user['id']}}" class="btn-success btn">Разрешить</a>
+                                  </td>
+                                </tr>
+                                <tr class="refer_1-1">
+                                  <td class="partner main-partner">
+                                    <div class="d-flex align-items-center">
+                                      <a href="#" class="arrow-down" onclick="return show_partners(1,this,1,'');">+</a>
+                                      <img src="http://placeimg.com/256/256/people" class="rounded-circle">
+                                      <div>
+                                        <a href="https://vk.com/id{{$user['vk_id']}}" target="_blank">Наталья Худикова</a>
+                                        <br />+79280369966
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <span style="color:orange;font-weight:bold;">Зарегистрирован</span>
+                                    <br />ID: 4311140
+                                  </td>
+                                  <td>
+                                    Курс: <b>Технология Бизнеса Amway</b>, пройден на <b>8</b>%<br />
+                                    Урок:
+                                    <b>#1.6</b> Для Физ.лиц - Получаем VIP-статус
+                                  </td>
+                                  <td>
+                                    <a href="/{{$locale}}/mentor/partners/amway/can-homeworks-review/{{$user['id']}}" class="btn-danger btn">Запретить</a>
+                                  </td>
+                                </tr>
+                                <tr class="refer_1 referal_from_1 referal">
+                                  <td colspan="4">
+                                    <table class="table table-partners">
+                                      <tbody>
+                                        <tr class="refer_1-1">
+                                          <td class="partner main-partner">
+                                            <div class="d-flex align-items-center">
+                                              <a href="#" class="arrow-down" onclick="return show_partners(1,this,1,'');">+</a>
+                                              <img src="http://placeimg.com/256/256/people" class="rounded-circle">
+                                              <div>
+                                                <a href="https://vk.com/id{{$user['vk_id']}}" target="_blank">Наталья Худикова</a>
+                                                <br />+79280369966
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <span style="color:orange;font-weight:bold;">Зарегистрирован</span>
+                                            <br />ID: 4311140
+                                          </td>
+                                          <td>
+                                            Курс: <b>Технология Бизнеса Amway</b>, пройден на <b>8</b>%<br />
+                                            Урок:
+                                            <b>#1.6</b> Для Физ.лиц - Получаем VIP-статус
+                                          </td>
+                                          <td>
+                                            <a href="/{{$locale}}/mentor/partners/amway/can-homeworks-review/{{$user['id']}}" class="btn-success btn">Разрешить</a>
+                                          </td>
+                                        </tr>
+                                        <tr class="refer_1-1">
+                                          <td class="partner main-partner">
+                                            <div class="d-flex align-items-center">
+                                              <a href="#" class="arrow-down" onclick="return show_partners(1,this,1,'');">+</a>
+                                              <img src="http://placeimg.com/256/256/people" class="rounded-circle">
+                                              <div>
+                                                <a href="https://vk.com/id{{$user['vk_id']}}" target="_blank">Наталья Худикова</a>
+                                                <br />+79280369966
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <span style="color:orange;font-weight:bold;">Зарегистрирован</span>
+                                            <br />ID: 4311140
+                                          </td>
+                                          <td>
+                                            Курс: <b>Технология Бизнеса Amway</b>, пройден на <b>8</b>%<br />
+                                            Урок:
+                                            <b>#1.6</b> Для Физ.лиц - Получаем VIP-статус
+                                          </td>
+                                          <td>
+                                            <a href="/{{$locale}}/mentor/partners/amway/can-homeworks-review/{{$user['id']}}" class="btn-danger btn">Запретить</a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </section>
+        </div>
+      </aside>
+    </div>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/rangeslider.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    function show_partners(user_id, button, level, classes) {
+      if ($(button).hasClass('arrow-down')) {
+        $(button).removeClass('arrow-down').addClass('arrow-up');
+        $.ajax({
+          url: '/{{$locale}}/mentor/partners/amway/show-partners/' + user_id + '?level=' + level + '&classes=' + classes,
+          type: "GET",
+          success: function (data) {
+            $('.refer_' + user_id).after(data);
+          }
+        });
+      }
+      else {
+        $(button).removeClass('arrow-up').addClass('arrow-down');
+        $('.referal_from_' + user_id).remove();
+      }
+      return false;
+    }
+  </script>
+  </body>
+</html>
