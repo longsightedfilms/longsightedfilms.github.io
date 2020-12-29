@@ -1,0 +1,741 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <title>John Deere</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/main.min.css?v=7">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png?v=2">
+    <link rel="manifest" href="/favicons/site.webmanifest?v=2">
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg?v=2" color="#646464">
+    <link rel="shortcut icon" href="/favicons/favicon.ico?v=2">
+    <meta name="msapplication-TileColor" content="#585858">
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml?v=2">
+    <meta name="theme-color" content="#3f3f3f">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34301602-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-34301602-2');
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <nav class="navbar navbar-expand-lg navbar-light header__navbar">
+                <a class="navbar-brand" href="/"><img src="img/header__logo.svg" alt="Логотип компании"><div class="divider"></div><img src="img/footer__logo.svg"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse header__navbar-collapse" id="navbarSupportedContent">
+                  <div class="header__top">
+                    <div class="header__address">
+                      <a href="tel:+78001234567" class="header__phone"><img src="img/icons/phone.png">8 800 551 59 61</a>
+                    </div>
+                    <div class="header__address">
+                      <a href="mailto:info@stroy-mashina.ru" class="header__phone"><img src="img/icons/close-envelope.png">Напишите нам</a>
+                    </div>
+                    <div class="header__address">
+                      <a href="#showroom" class="header__phone"><img src="img/icons/home-address.png">Филиалы</a>
+                    </div>
+                    <a href="#" class="header__button" data-type="all"><img src="img/icons/support.png"> Получить консультацию</a>
+                  </div>
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="/">Вся техника</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/excavators">Экскаваторы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/bulldozers">Бульдозеры</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/autograders">Автогрейдеры</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/excavators-forklifts">Экскаваторы-погрузчики</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/mini-forklifts">Погрузчики с бортовым поворотом</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/frontal-forklifts">Фронтальные погрузчики</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="jumbotron jumbotron_all-vehicles">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6">
+                      <h1 class="block-heading">Дорожно-строительная тяжелая техника</h1>
+                      <p class="block-desc">от производителя с опытом работы в 180 лет</p>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="list">
+                      <li>
+                        <b class="counter">01</b>
+                        <p>Высокая ликвидность на вторичном рынке.Возможен обратный выкуп</p>
+                      </li>
+                      <li>
+                        <b class="counter">02</b>
+                        <p>Лизинг за 7 дней от John Deere Financial</p>
+                      </li>
+                      <li>
+                        <b class="counter">03</b>
+                        <p>Всегда в наличии 98% всего ассортимента запасных частей</p>
+                      </li>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="consult">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-8 col-lg-10">
+              <div class="block">
+                <h3 class="block-heading">Нужна консультация эксперта по строительной технике?</h3>
+                <p class="block-desc">Оставьте свои контактные данные, наш эксперт позвонит в течение 30 минут и поможет подобрать строительную технику, отвечающую именно Вашим задачам</p>
+                <form action="#" class="form" method="POST" onsubmit="return send_request(this, event);">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="input_name">
+                        <input type="text" class="form-control input" name="name" placeholder="Имя" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input_city">
+                        <input type="text" class="form-control input" name="city" placeholder="Город" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input_phone">
+                        <input type="phone" class="form-control input" name="phone" placeholder="Телефон" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input_company">
+                        <input type="text" class="form-control input" name="company" placeholder="Компания" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input_mail">
+                        <input type="email" class="form-control input" name="email" placeholder="Email" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input_job">
+                        <input type="text" class="form-control input" name="job" placeholder="Должность" required>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <input type="hidden" name="item" value="Строительная техника">
+                      <input type="hidden" name="subject" value="Консультация эксперта">
+                      <button type="submit" class="button button_arrowed">Получить консультацию эксперта</button>
+                      <p class="note">Нажимая на кнопку «Получить консультацию эксперта» Вы даете согласие на хранение и обработку своих персональных данных</p>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="products">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="block-heading">Уже 180 лет мы производим машины которые годами работают без капитального ремонта</h3>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="product product_1">
+                <a href="/excavators"><img class="lazy" data-src="img/products/img-6.png"></a>
+                <b>Экскаваторы</b>
+                <p class="note">Объем ковша от 0,6 до 2,2 м³</p>
+                <a href="#" class="button" data-type="excavators">Получить консультацию</a>
+                <a href="/excavators#models" class="button button_arrowed">Выбрать модель</a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="product">
+                <a href="/bulldozers"><img class="lazy" data-src="img/products/img-1.png"></a>
+                <b>Гусеничные бульдозеры</b>
+                <p class="note">Емкость отвала от 2,7 до 11,4 м³</p>
+                <a href="#" class="button" data-type="bulldozers">Получить консультацию</a>
+                <a href="/bulldozers#models" class="button button_arrowed">Выбрать модель</a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="product">
+                <a href="/autograders"><img class="lazy" data-src="img/products/img-4.png"></a>
+                <b>Автогрейдеры</b>
+                <p class="note">Тяговое усилие от 12 до 20 тонн</p>
+                <a href="#" class="button" data-type="autograders">Получить консультацию</a>
+                <a href="/autograders#models" class="button button_arrowed">Выбрать модель</a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="product">
+                <a href="/frontal-forklifts"><img class="lazy" data-src="img/products/img-2.png"></a>
+                <b>Фронтальные погрузчики</b>
+                <p class="note">Объем ковша от 1,9 до 6,1 м³</p>
+                <a href="#" class="button" data-type="frontal_forklifts">Получить консультацию</a>
+                <a href="/frontal-forklifts#models" class="button button_arrowed">Выбрать модель</a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="product">
+                <a href="/mini-forklifts"><img class="lazy" data-src="img/products/img-3.png"></a>
+                <b>Мини-погрузчики</b>
+                <p class="note">Грузоподъемность без противовеса до 1221 кг</p>
+                <a href="#" class="button" data-type="mini_forklifts">Получить консультацию</a>
+                <a href="/mini-forklifts#models" class="button button_arrowed">Выбрать модель</a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="product">
+                <a href="/excavators-forklifts"><img class="lazy" data-src="img/products/img-5.png"></a>
+                <b>Экскаваторы-погрузчики</b>
+                <p class="note">Вырывное усилие от 48 до 57 кН</p>
+                <a href="#" class="button" data-type="excavators_forklifts">Получить консультацию</a>
+                <a href="/excavators-forklifts#models" class="button button_arrowed">Выбрать модель</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="technologies">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="block-heading">Технологии, входящие в состав стандартной комплектации техники, позволяют сократить простои и упредить поломки</h3>
+              <div class="block">
+                <div class="image">
+                  <img class="lazy" data-src="img/tech__logo.png">
+                </div>
+                <p>Решения John Deere WorkSight - это набор простых в использовании технологических решений, направленных на оптимизацию способов работы машины, эксплуатационной надежности и рабочей площадки. Они предназначены для управления парком техники любого размера, начиная с одной единицы до крупных смешанных парков. Эти технологии позволят повысить рентабельность строительных проектов за счет достижения максимально возможной производительности техники и максимального времени ее безотказной работы при одновременной оптимизации эксплуатационных расходов.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="block-video">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="lazy" data-src="https://www.youtube.com/embed/64obuw8bVjo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <b>Технологические решения John Deere WorkSight</b>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="block-video">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="lazy" data-src="https://www.youtube.com/embed/LtTWWAydqNs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <b>Сокращение простоев техники с John Deere WorkSight</b>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="block-video">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="lazy" data-src="https://www.youtube.com/embed/DTv5JILPYho" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <b>Оптимизация работы парка техники с John Deere WorkSight</b>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="monitoring">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="block-heading">80% НЕИСПРАВНОСТЕЙ МАШИНЫ МЫ МОЖЕМ ПРОДИАГНОСТИРОВАТЬ И ПРЕДУПРЕДИТЬ В ТЕЧЕНИЕ ДВУХ ЧАСОВ</h3>
+              <p class="block-desc">Мы круглосуточно проверяем всю проданную технику на неисправности и сообщаем об этом клиентам. Большинство проблем предупреждаем удаленно и заранее при помощи системы JDLink, не выставляя счета за пробег и не тратя лишнего времени.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-7 col-md-6 order-1 order-md-0">
+              <div class="info">
+                <b>Система телематики JDLink</b>
+                <p>Позволяет реализовать все возможности по повышению прибыли, заложенные в пакет решений John Deere WorkSight. Она помогает централизованно осуществлять «умное» управление всем парком техники и расширять бизнес благодаря массе возможностей — от предоставления базовых данных, до отправки предупреждений о состоянии машин и отслеживания эффективности работы. Ваш дилер John Deere может помочь Вам сократить простои техники, оценив и выполнив сброс диагностических кодов неисправностей и выполнив запись показателей работы машин в удаленном режиме, благодаря доступным в составе John Deere WorkSight уникальным функциям удаленной диагностики и программирования.</p>
+              </div>
+            </div>
+            <div class="col-xl-5 col-md-6 order-0 order-md-1">
+              <div class="monitoring-carousel">
+                <div><a href="img/monitoring/img-1.jpg"><img class="lazy" data-src="img/monitoring/min/img-1.jpg"></a></div>
+                <div><a href="img/monitoring/img-2.jpg"><img class="lazy" data-src="img/monitoring/min/img-2.jpg"></a></div>
+                <div><a href="img/monitoring/img-3.jpg"><img class="lazy" data-src="img/monitoring/min/img-3.jpg"></a></div>
+                <div><a href="img/monitoring/img-4.jpg"><img class="lazy" data-src="img/monitoring/min/img-4.jpg"></a></div>
+                <div><a href="img/monitoring/img-5.jpg"><img class="lazy" data-src="img/monitoring/min/img-5.jpg"></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <b class="title">Возможности JDLink - системы удаленного мониторинга для управления парком техники</b>
+            </div>
+            <div class="col-md-6">
+              <div class="block">
+                <div class="heading">
+                  <img class="lazy" data-src="img/icons/monitoring/project-management.png">
+                  <p>Управление техникой</p>
+                </div>
+                <div class="content">
+                  <ul class="list">
+                    <li><p>Контроль</p></li>
+                    <li><p>Информация о том, где находится ваша техника</p></li>
+                    <li><p>Информация о том, работе и простоях машины</p></li>
+                    <li><p>Уведомления</p></li>
+                    <li><p>Уведомления о состоянии вашей машины</p></li>
+                    <li><p>Уведомления при возникновении проблем (по электронной почте или SMS)</p></li>
+                    <li><p>Наработка и обслуживание</p></li>
+                    <li><p>Информация о цикле жизни/работе фильтров</p></li>
+                    <li><p>Информация о необходимости сервисных работ</p></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="block">
+                <div class="heading">
+                  <img class="lazy" data-src="img/icons/monitoring/presentation.png">
+                  <p>Оптимизация рабочей площадки</p>
+                </div>
+                <div class="content">
+                  <ul class="list">
+                    <li><p>Производительность машины</p></li>
+                    <li><p>Информация, позволяющая оценить эффективность работы машины на данной площадке</p></li>
+                    <li><p>Загрузка машины</p></li>
+                    <li><p>Информация о том, сколько тонн перевезено и сколько циклов завершено</p></li>
+                    <li><p>Местоположение на рабочей площадке</p></li>
+                    <li><p>Информация о том, на какой рабочей площадке находится машина и как она используется</p></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="block">
+                <div class="heading">
+                  <img class="lazy" data-src="img/icons/monitoring/stopwatch.png">
+                  <p>Оптимизация рабочего времени</p>
+                </div>
+                <div class="content">
+                  <ul class="list">
+                    <li><p>Удаленное программирование</p></li>
+                    <li><p>Скачивание и установка обновлений удаленно</p></li>
+                    <li><p>Диагностические коды неисправностей</p></li>
+                    <li><p>Проверка ошибок в удаленном режиме</p></li>
+                    <li><p>Удаленная диагностика</p></li>
+                    <li><p>Беспроводное подключение к машине и устранение неисправности без выезда к оборудованию</p></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="block">
+                <div class="heading">
+                  <img class="lazy" data-src="img/icons/monitoring/fuel.png">
+                  <p>Оптимизация парка оборудования</p>
+                </div>
+                <div class="content">
+                  <ul class="list">
+                    <li><p>Данные о расходе топлива</p></li>
+                    <li><p>Узнайте средний расход топлива за конкретный период</p></li>
+                    <li><p>Использование двигателя</p></li>
+                    <li><p>Информация о времени простоя и работы оборудования</p></li>
+                    <li><p>Использование топлива машиной</p></li>
+                    <li><p>Информация об общем расходе топлива</p></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="showroom" id="showroom">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="block-heading">Выставочный зал техники есть в каждом нашем филиале</h3>
+              <p class="block-desc">Мы имеем 15 дилерских центров в России. Расположение филиалов — не более 150 км до самого дальнего клиента — позволяет оперативно реагировать на запросы заказчиков и оказывать необходимое сервисное обслуживание. Региональные площадки располагают службами продаж и сервиса, выставочными экспозициями техники и складами запасных частей.</p>
+            </div>
+            <div class="col-xl-5 col-lg-6">
+              <div class="block">
+                <b>Забронируйте удобные дату и время посещения ближайшего Выставочного центра John Deere</b>
+                <p>Чтобы там Вас сопровождал эксперт, который сможет ответить на любой вопрос</p>
+                <form action="#" class="form" method="POST" onsubmit="return send_request(this, event);">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="input_name">
+                        <input type="text" class="form-control input" name="name" placeholder="Имя" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input_city">
+                        <input type="text" class="form-control input" name="city" placeholder="Город" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input_phone">
+                        <input type="phone" class="form-control input" name="phone" placeholder="Телефон" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input_company">
+                        <input type="text" class="form-control input" name="company" placeholder="Компания" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input_mail">
+                        <input type="email" class="form-control input" name="email" placeholder="Email" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input_job">
+                        <input type="text" class="form-control input" name="job" placeholder="Должность" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input_date">
+                        <input type="date" class="form-control input" name="date" placeholder="Дата" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input_time">
+                        <input type="time" class="form-control input" name="time" placeholder="Время" required>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="input_address">
+                        <select class="custom-select" name="address">
+                          <option selected>Адрес филиала</option>
+                          <option value="1" data-coords="55.70921,37.387487" data-address="143026, г. Москва, Можайское шоссе, 166">143026, г. Москва, Можайское шоссе, 166</option>
+                          <option value="2" data-address="140413, Московская обл., г.Коломна, Пирочинское шоссе, 12" data-coords="55.11977369719,38.820743996138">140482, Московская область, Коломенский р-н, с.Амерево, 110км трассы М-5 "Урал"</option>
+                          <option value="3" data-address="141896, Московская область, Дмитровский район, Бунятинский с.о., дер.Бунятино , 56.40474509336; 37.249174539672" data-coords="56.40474509336,37.249174539672">141896, Московская область, Дмитровский район, Бунятинский с.о., дер.Бунятино</option>
+                          <option value="4" data-address="350056, Краснодарский край, г. Краснодар, Восточный обход, 45.1134; 39.1181" data-coords="45.1134,39.1181">350056, Краснодарский край, г. Краснодар, Восточный обход</option>
+                          <option value="5" data-address="352040, Краснодарский край, Павловский р-н, ст. Павловская, ул. Советская, 66А" data-coords="46.122391055009,39.798981606045">352040, Краснодарский край, Павловский р-н, ст. Павловская, ул. Советская, 66А</option>
+                          <option value="6" data-address="352165, Краснодарский край, Гулькевичский р-н, пос. Красносельский, ул. Промышленная, 8" data-coords="45.389369440073,40.602082459503">352165, Краснодарский край, Гулькевичский р-н, пос. Красносельский, ул. Промышленная, 8</option>
+                          <option value="7" data-address="353600, Краснодарский край, Староминской р-н, ст. Староминская, ул. Маяковского, 4" data-coords="46.503924575775,39.059548994799">353600, Краснодарский край, Староминской р-н, ст. Староминская, ул. Маяковского, 4</option>
+                          <option value="8" data-address="385140, Республика Адыгея, Тахтамукайский р-н, пос. Яблоновский, ул. Связи, 7" data-coords="44.98630979167,38.955426485538">385140, Республика Адыгея, Тахтамукайский р-н, пос. Яблоновский, ул. Связи, 7</option>
+                          <option value="9" data-address="346735, Ростовская обл., Аксайский р-н, пос. Рассвет, ул. Институтская, 1а" data-coords="47.364094598609,39.887470275515">346735, Ростовская обл., Аксайский р-н, пос. Рассвет, ул. Институтская, 1а</option>
+                          <option value="10" data-address="347630, Ростовская обл., Сальский р-н, г. Сальск, ул. Прямая, 85а" data-coords="46.464623306038,41.513119211429">347630, Ростовская обл., Сальский р-н, г. Сальск, ул. Прямая, 85а</option>
+                          <option value="11" data-address="346130, Ростовская обл., Миллеровский р-н, г. Миллерово, ул. Седова, 12" data-coords="48.937221048733,40.397648559099">346130, Ростовская обл., Миллеровский р-н, г. Миллерово, ул. Седова, 12</option>
+                          <option value="12" data-address="347210, Ростовская обл., г. Морозовск, ул. Луначарского, 122" data-coords="48.354787912783,41.807613025238">347210, Ростовская обл., г. Морозовск, ул. Луначарского, 122</option>
+                          <option value="13" data-address="400075, Волгоградская обл., г. Волгоград, ул.Краснополянская, 76а" data-coords="48.782795334998,44.49461564418">400075, Волгоградская обл., г. Волгоград, ул.Краснополянская, 76а</option>
+                          <option value="14" data-address="350012, Краснодарский край, г. Краснодар, ул. Красных Партизан, КНИИСХ им. Лукьяненко (Центральная Усадьба)" data-coords="45.061245733326,38.909013978229">350012, Краснодарский край, г. Краснодар, ул. Красных Партизан, КНИИСХ им. Лукьяненко (Центральная Усадьба)</option>
+                          <option value="15" data-address="Ростовская обл., Матвеево-Курганный р-н, пос. Матвеев Курган, ул. Промышленная, д. 1" data-coords="47.586265853403,38.877366662666">Ростовская обл., Матвеево-Курганный р-н, пос. Матвеев Курган, ул. Промышленная, д. 1</option>
+                          <option value="16" data-address="Ставропольский край, г.Минеральные Воды, ул.Советская, 18" data-coords="44.18538371593,43.132013142565">Ставропольский край, г.Минеральные Воды, ул.Советская, 18</option>
+                          <option value="17" data-address="352916, Краснодарский край, г. Армавир, Северная промзона, участок 115" data-coords="45.011177565195,41.076198972825">352916, Краснодарский край, г. Армавир, Северная промзона, участок 115</option>
+                          <option value="18" data-address="Беларусь, г. Минск" data-coords="53.902496,27.561481">Беларусь, г. Минск</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <input type="hidden" name="item" value="Строительная техника">
+                      <input type="hidden" name="subject" value="Встреча">
+                      <button type="submit" class="button button_arrowed">Получить консультацию эксперта</button>
+                      <p class="note">Нажимая на кнопку «Получить консультацию эксперта» Вы даете согласие на хранение и обработку своих персональных данных</p>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-xl-7 col-lg-6">
+              <div id="mapContacts" class="map"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="warehouse">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="block-heading">98% ассортимента всех запасных частей есть на складе каждого нашего филиала</h3>
+              <p class="block-desc">Склад запчастей есть в каждом филиале компании, что позволяет нам оперативно реагировать на заявки наших клиентов. В наличии всегда есть все необходимые запасные части на строительную технику John Deere. Таким образом, замена поврежденных или изношенных деталей совершается своевременно, что, в свою очередь, повышает производительность и срок службы техники.</p>
+              <ul class="list">
+                <li>
+                  <b class="counter"></b>
+                  <div class="image-wrap">
+                    <div class="inner">
+                      <img class="lazy" data-src="img/icons/warehouse/diode.png">
+                    </div>
+                  </div>
+                  <p>Расходные материалы и фильтры</p>
+                </li>
+                <li>
+                  <b class="counter"></b>
+                  <div class="image-wrap">
+                    <div class="inner">
+                      <img class="lazy" data-src="img/icons/warehouse/oil-drum.png">
+                    </div>
+                  </div>
+                  <p>Масла и смазки</p>
+                </li>
+                <li>
+                  <b class="counter"></b>
+                  <div class="image-wrap">
+                    <div class="inner">
+                      <img class="lazy" data-src="img/icons/warehouse/resistor.png">
+                    </div>
+                  </div>
+                  <p>Узлы и компоненты</p>
+                </li>
+                <li>
+                  <b class="counter"></b>
+                  <div class="image-wrap">
+                    <div class="inner">
+                      <img class="lazy" data-src="img/icons/warehouse/rom.png">
+                    </div>
+                  </div>
+                  <p>Детали ходовой части и двигателей</p>
+                </li>
+                <li>
+                  <div class="image-wrap">
+                    <div class="inner">
+                      <img class="lazy" data-src="img/icons/warehouse/components.png">
+                    </div>
+                  </div>
+                  <p>Зубья, кромки и навесное оборудование</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="partners">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="block-heading">В любом регионе России есть несколько десятков крупных строительных компаний, использующих технику John Deere</h3>
+                    <ul class="list">
+                      <li><img class="lazy" data-src="img/partners/img-1.png" src="img/partners/img-1.png"></li>
+                      <li><img class="lazy" data-src="img/partners/img-2.png"></li>
+                      <li><img class="lazy" data-src="img/partners/img-3.png"></li>
+                      <li><img class="lazy" data-src="img/partners/img-4.png"></li>
+                      <li><img class="lazy" data-src="img/partners/img-5.png"></li>
+                      <li><img class="lazy" data-src="img/partners/img-6.png"></li>
+                      <li><img class="lazy" data-src="img/partners/img-7.png"></li>
+                      <li><img class="lazy" data-src="img/partners/img-8.png"></li>
+                      <li><img class="lazy" data-src="img/partners/img-9.png"></li>
+                      <li><img class="lazy" data-src="img/partners/img-10.png"></li>
+                      <li><img class="lazy" data-src="img/partners/img-11.png"></li>
+                      <li><img class="lazy" data-src="img/partners/img-12.png"></li>
+                      <li><img class="lazy" data-src="img/partners/img-13.png"></li>
+                      <li><img class="lazy" data-src="img/partners/img-14.png"></li>
+                      <li><img class="lazy" data-src="img/partners/img-15.png"></li>
+                      <li><img class="lazy" data-src="img/partners/img-16.png"></li>
+                      <li><img class="lazy" data-src="img/partners/img-17.png"></li>
+                      <li><img class="lazy" data-src="img/partners/img-18.png"></li>
+                      <li><img class="lazy" data-src="img/partners/img-19.png"></li>
+                      <li><img class="lazy" data-src="img/partners/img-20.png"></li>
+                      <li><img class="lazy" data-src="img/partners/img-21.png"></li>
+                      <li><img class="lazy" data-src="img/partners/img-22.png"></li>
+                      <li><img class="lazy" data-src="img/partners/img-23.png"></li>
+                      <li><img class="lazy" data-src="img/partners/img-24.png"></li>
+                      <li><img class="lazy" data-src="img/partners/img-25.png"></li>
+                      <li><img class="lazy" data-src="img/partners/img-26.png"></li>
+                      <li><img class="lazy" data-src="img/partners/img-27.png"></li>
+                      <li><img class="lazy" data-src="img/partners/img-28.png"></li>
+                      <li><img class="lazy" data-src="img/partners/img-29.png"></li>
+                      <li><img class="lazy" data-src="img/partners/img-30.png"></li>
+                      <li><img class="lazy" data-src="img/partners/img-31.png"></li>
+                      <li><img class="lazy" data-src="img/partners/img-32.png"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4">
+            <img src="img/footer__logo.png" alt="Логотип компании" class="footer-logo">
+            <p class="footer-info">ООО «АГРО-СТРОИТЕЛЬНЫЕ ТЕХНОЛОГИИ»<br/>ИНН: 2311082835<br/>КПП: 231101001<br/>ОГРН: 1052306466475<br/>г. Краснодар</p>
+          </div>
+          <div class="col-lg col-md-5">
+            <ul class="footer-list">
+              <li><a href="/">Вся техника</a></li>
+              <li><a href="/bulldozers">Бульдозеры</a></li>
+              <li><a href="/excavators">Экскаваторы</a></li>
+              <li><a href="/autograders">Автогрейдеры</a></li>
+              <li><a href="/mini-forklifts">Погрузчики с бортовым поворотом</a></li>
+              <li><a href="/excavators-forklifts">Экскаваторы-погрузчики</a></li>
+              <li><a href="/frontal-forklifts">Фронтальные погрузчики</a></li>
+              <li><a href="#">Лизинг и финансирование</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-3 d-flex d-md-block">
+            <div class="footer-links">
+              <a href="tel:+78001234567" class="footer-link"><img src="img/icons/phone.png"> 8 800 123-45-67</a>
+              <a href="mailto:mail@mail.ru" class="footer-link"><img src="img/icons/close-envelope.png"> mail@mail.ru</a>
+            </div>
+            <div class="footer-creator">
+                <p>Создание сайта и рекламных кампаний:</p>
+                <a href="https://varga-da.com"><img src="img/creator__logo.png" alt="Давид Варга"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div id="consult" class="mfp-popup mfp-hide">
+      <section class="consult">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <div class="block">
+                <h3 class="block-heading">Нужна консультация эксперта по строительной технике?</h3>
+                <p class="block-desc">Оставьте свои контактные данные, наш эксперт позвонит в течение 30 минут и поможет подобрать строительную технику, отвечающую именно Вашим задачам</p>
+                <form action="#" class="form" method="POST" onsubmit="return send_request(this, event);">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="input_name">
+                        <input type="text" class="form-control input" name="name" placeholder="Имя" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input_city">
+                        <input type="text" class="form-control input" name="city" placeholder="Город" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input_phone">
+                        <input type="phone" class="form-control input" name="phone" placeholder="Телефон" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input_company">
+                        <input type="text" class="form-control input" name="company" placeholder="Компания" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input_mail">
+                        <input type="email" class="form-control input" name="email" placeholder="Email" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input_job">
+                        <input type="text" class="form-control input" name="job" placeholder="Должность" required>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <input type="hidden" name="item" value="Строительная техника">
+                      <input type="hidden" name="subject" value="Консультация эксперта">
+                      <button type="submit" class="button button_arrowed">Получить консультацию эксперта</button>
+                      <p class="note">Нажимая на кнопку «Получить консультацию эксперта» Вы даете согласие на хранение и обработку своих персональных данных</p>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="commercial" class="mfp-popup mfp-hide">
+      <section class="consult">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <div class="block">
+                <h3 class="block-heading">Нужна консультация эксперта по строительной технике?</h3>
+                <p class="block-desc">Оставьте свои контактные данные, наш эксперт позвонит в течение 30 минут и поможет подобрать строительную технику, отвечающую именно Вашим задачам</p>
+                <form action="#" class="form" method="POST" onsubmit="return send_request(this, event);">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="input_name">
+                        <input type="text" class="form-control input" name="name" placeholder="Имя" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input_city">
+                        <input type="text" class="form-control input" name="city" placeholder="Город" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input_phone">
+                        <input type="phone" class="form-control input" name="phone" placeholder="Телефон" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input_company">
+                        <input type="text" class="form-control input" name="company" placeholder="Компания" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input_mail">
+                        <input type="email" class="form-control input" name="email" placeholder="Email" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input_job">
+                        <input type="text" class="form-control input" name="job" placeholder="Должность" required>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <input type="hidden" name="item" value="Строительная техника">
+                      <input type="hidden" name="subject" value="Коммерческое предложение">
+                      <button type="submit" class="button button_arrowed">Получить консультацию эксперта</button>
+                      <p class="note">Нажимая на кнопку «Получить консультацию эксперта» Вы даете согласие на хранение и обработку своих персональных данных</p>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="thankyou" class="mfp-popup mfp-hide">
+      <b class="block-heading">Спасибо! Мы вам перезвоним в течение 30 минут</b>
+    </div>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script type="text/javascript" src="https://api-maps.yandex.ru/2.1.17/?lang=ru_RU"></script>
+  <script src="js/main.js?v=6"></script>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+    m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(52184932, "init", {
+      id: 52184932,
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/52184932" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script>
+    function send_request(form, event) {
+      event.preventDefault();
+      event.stopPropagation();
+      $.ajax({
+        url: '/request.php',
+        type: "POST",
+        data: $(form).serialize()
+      });
+      openModal('#thankyou', event);
+      gtag('event', 'request', { 'event_category': 'request', 'event_action': 'request' });
+      window.yaCounterid52184932.reachGoal('request');
+      return false;
+    }
+    $(document).ready(function () {
+      $('body').activity({
+        'achieveTime': 60,
+        'testPeriod': 10,
+        useMultiMode: 1,
+        callBack: function (e) {
+          gtag('event', '60_sec', { 'event_category': '60_sec', 'event_action': '60_sec' });
+        }
+      });
+    });
+  </script>
+  </body>
+</html>
